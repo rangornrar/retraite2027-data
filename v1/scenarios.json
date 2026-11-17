@@ -1,0 +1,83 @@
+{
+  "formatVersion": 1,
+  "publishedAt": "2026-11-17",
+  "constants": {
+    "pass": 48060,
+    "pointPurchase": 20.1877,
+    "pointValue": 1.4386,
+    "rateT1": 0.062,
+    "rateT2": 0.17,
+    "socialBase": 0.091,
+    "socialComplementary": 0.101,
+    "sources": [
+      { "label": "PASS 2026 : 48 060 €", "url": "https://www.legisocial.fr/reperes-sociaux/plafond-securite-sociale-2026.html", "date": "2026-01-01" },
+      { "label": "Point Agirc-Arrco : prix d'achat 20,1877 €, valeur 1,4386 € (revalorisation du 1er novembre 2026 à vérifier)", "url": "https://www.lafinancepourtous.com/2025/10/20/retraites-complementaires-agirc-arrco-aucune-revalorisation-au-1er-novembre-2025/", "date": "2025-11-01" },
+      { "label": "Taux de points 6,20 % (T1) et 17 % (T2)", "url": "https://calcforlife.com/fr/calcul-agirc-arrco/" },
+      { "label": "Prélèvements au taux normal : 9,1 % (base), 10,1 % (complémentaire)", "url": "https://www.lafinancepourtous.com/pratique/retraite/preparer-son-depart-a-la-retraite/le-montant-de-la-retraite-du-brut-au-net/" }
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "loi-actuelle",
+      "type": "statusQuo",
+      "label": "Loi actuelle",
+      "subtitle": "Réforme 2023 suspendue (LFSS 2026)",
+      "updatedAt": "2026-11-17",
+      "reference": true,
+      "params": {
+        "bareme": {
+          "value": [
+            { "bornFrom": "1961-01", "bornTo": "1961-08", "legalAge": "62y0m", "requiredQuarters": 168 },
+            { "bornFrom": "1961-09", "bornTo": "1961-12", "legalAge": "62y3m", "requiredQuarters": 169 },
+            { "bornFrom": "1962-01", "bornTo": "1962-12", "legalAge": "62y6m", "requiredQuarters": 169 },
+            { "bornFrom": "1963-01", "bornTo": "1965-03", "legalAge": "62y9m", "requiredQuarters": 170 },
+            { "bornFrom": "1965-04", "bornTo": "1965-12", "legalAge": "63y0m", "requiredQuarters": 171 },
+            { "bornFrom": "1966-01", "bornTo": "1966-12", "legalAge": "63y3m", "requiredQuarters": 172 },
+            { "bornFrom": "1967-01", "bornTo": "1967-12", "legalAge": "63y6m", "requiredQuarters": 172 },
+            { "bornFrom": "1968-01", "bornTo": "1968-12", "legalAge": "63y9m", "requiredQuarters": 172 },
+            { "bornFrom": "1969-01", "legalAge": "64y0m", "requiredQuarters": 172 }
+          ],
+          "source": { "label": "Loi n° 2025-1403 du 30 décembre 2025 (LFSS 2026), article 45", "url": "https://cms.law/fr/fra/a-la-une/plfss-pour-2026-une-lettre-rectificative-pour-suspendre-la-reforme-des-retraites", "date": "2025-12-30" }
+        },
+        "decotePerQuarter": { "value": 0.625, "source": { "label": "Code de la sécurité sociale (décote du régime général)" } },
+        "decoteMaxQuarters": { "value": 20, "source": { "label": "Code de la sécurité sociale (décote plafonnée à 20 trimestres)" } },
+        "fullRateAge": { "value": "67y0m", "source": { "label": "Code de la sécurité sociale (taux plein automatique à 67 ans)" } },
+        "surcotePerQuarter": { "value": 1.25, "source": { "label": "Code de la sécurité sociale (surcote)" } }
+      },
+      "measures": [
+        { "text": "Âge légal et durée requise gelés pour les générations 1964 à début 1965, puis relevés d'un trimestre par génération jusqu'à 64 ans et 172 trimestres pour les personnes nées à partir de 1969", "modelled": true, "source": { "label": "LFSS 2026, article 45", "url": "https://cms.law/fr/fra/a-la-une/plfss-pour-2026-une-lettre-rectificative-pour-suspendre-la-reforme-des-retraites", "date": "2025-12-30" } },
+        { "text": "Retraite anticipée pour carrière longue, avec un calendrier adapté", "modelled": false, "source": { "label": "Décret d'application de la LFSS 2026" } }
+      ]
+    },
+    {
+      "id": "reforme-2023",
+      "type": "statusQuo",
+      "label": "Réforme 2023 reprend",
+      "subtitle": "Trajectoire initiale de la loi de 2023",
+      "updatedAt": "2026-11-17",
+      "params": {
+        "bareme": {
+          "value": [
+            { "bornFrom": "1961-01", "bornTo": "1961-08", "legalAge": "62y0m", "requiredQuarters": 168 },
+            { "bornFrom": "1961-09", "bornTo": "1961-12", "legalAge": "62y3m", "requiredQuarters": 169 },
+            { "bornFrom": "1962-01", "bornTo": "1962-12", "legalAge": "62y6m", "requiredQuarters": 169 },
+            { "bornFrom": "1963-01", "bornTo": "1963-12", "legalAge": "62y9m", "requiredQuarters": 170 },
+            { "bornFrom": "1964-01", "bornTo": "1964-12", "legalAge": "63y0m", "requiredQuarters": 171 },
+            { "bornFrom": "1965-01", "bornTo": "1965-12", "legalAge": "63y3m", "requiredQuarters": 172 },
+            { "bornFrom": "1966-01", "bornTo": "1966-12", "legalAge": "63y6m", "requiredQuarters": 172 },
+            { "bornFrom": "1967-01", "bornTo": "1967-12", "legalAge": "63y9m", "requiredQuarters": 172 },
+            { "bornFrom": "1968-01", "legalAge": "64y0m", "requiredQuarters": 172 }
+          ],
+          "source": { "label": "Loi n° 2023-270 du 14 avril 2023 (calendrier sans suspension)", "url": "https://cms.law/fr/fra/a-la-une/plfss-pour-2026-une-lettre-rectificative-pour-suspendre-la-reforme-des-retraites", "date": "2023-04-14" }
+        },
+        "decotePerQuarter": { "value": 0.625, "source": { "label": "Code de la sécurité sociale (décote du régime général)" } },
+        "decoteMaxQuarters": { "value": 20, "source": { "label": "Code de la sécurité sociale (décote plafonnée à 20 trimestres)" } },
+        "fullRateAge": { "value": "67y0m", "source": { "label": "Code de la sécurité sociale (taux plein automatique à 67 ans)" } },
+        "surcotePerQuarter": { "value": 1.25, "source": { "label": "Code de la sécurité sociale (surcote)" } }
+      },
+      "measures": [
+        { "text": "Âge légal relevé de 3 mois par génération jusqu'à 64 ans pour les personnes nées à partir de 1968, durée de 172 trimestres dès la génération 1965", "modelled": true, "source": { "label": "Loi n° 2023-270 du 14 avril 2023", "date": "2023-04-14" } }
+      ]
+    }
+  ]
+}
