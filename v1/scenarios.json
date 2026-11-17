@@ -254,6 +254,7 @@
       "id": "arthaud",
       "type": "candidate",
       "label": "Nathalie Arthaud",
+      "sortName": "Arthaud",
       "party": "Lutte ouvrière",
       "updatedAt": "2026-11-17",
       "params": {
@@ -328,6 +329,7 @@
       "id": "attal",
       "type": "candidate",
       "label": "Gabriel Attal",
+      "sortName": "Attal",
       "party": "Renaissance",
       "updatedAt": "2026-11-17",
       "params": {
@@ -393,6 +395,7 @@
       "id": "glucksmann",
       "type": "candidate",
       "label": "Raphaël Glucksmann",
+      "sortName": "Glucksmann",
       "party": "Place publique",
       "updatedAt": "2026-11-17",
       "params": {
@@ -453,6 +456,7 @@
       "id": "le-pen",
       "type": "candidate",
       "label": "Marine Le Pen",
+      "sortName": "Le Pen",
       "party": "Rassemblement national",
       "updatedAt": "2026-11-17",
       "params": {
@@ -581,6 +585,7 @@
       "id": "lisnard",
       "type": "candidate",
       "label": "David Lisnard",
+      "sortName": "Lisnard",
       "party": "Nouvelle Énergie",
       "updatedAt": "2026-11-17",
       "params": {
@@ -647,6 +652,7 @@
       "id": "melenchon",
       "type": "candidate",
       "label": "Jean-Luc Mélenchon",
+      "sortName": "Mélenchon",
       "party": "La France insoumise",
       "updatedAt": "2026-11-17",
       "params": {
@@ -723,6 +729,7 @@
       "id": "philippe",
       "type": "candidate",
       "label": "Édouard Philippe",
+      "sortName": "Philippe",
       "party": "Horizons",
       "updatedAt": "2026-11-17",
       "params": {
@@ -871,6 +878,7 @@
       "id": "retailleau",
       "type": "candidate",
       "label": "Bruno Retailleau",
+      "sortName": "Retailleau",
       "party": "Les Républicains",
       "updatedAt": "2026-11-17",
       "params": {
@@ -965,6 +973,7 @@
       "id": "roussel",
       "type": "candidate",
       "label": "Fabien Roussel",
+      "sortName": "Roussel",
       "party": "Parti communiste français",
       "updatedAt": "2026-11-17",
       "params": {
@@ -1030,6 +1039,7 @@
       "id": "ruffin",
       "type": "candidate",
       "label": "François Ruffin",
+      "sortName": "Ruffin",
       "party": "Debout !",
       "updatedAt": "2026-11-17",
       "params": {
@@ -1095,6 +1105,7 @@
       "id": "tondelier",
       "type": "candidate",
       "label": "Marine Tondelier",
+      "sortName": "Tondelier",
       "party": "Les Écologistes",
       "updatedAt": "2026-11-17",
       "params": {
@@ -1180,6 +1191,7 @@
       "id": "zemmour",
       "type": "candidate",
       "label": "Éric Zemmour",
+      "sortName": "Zemmour",
       "party": "Reconquête",
       "updatedAt": "2026-11-17",
       "params": {
