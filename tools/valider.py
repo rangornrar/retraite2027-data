@@ -10,7 +10,9 @@ import json
 import re
 import sys
 
-CLES = ["bareme", "decotePerQuarter", "decoteMaxQuarters", "fullRateAge", "surcotePerQuarter", "minimumNetMonthly"]
+CLES = ["bareme", "legalAge", "requiredQuarters", "startAgeRules", "decotePerQuarter",
+        "decoteMaxQuarters", "fullRateAge", "surcotePerQuarter", "minimumNetMonthly"]
+FACULTATIFS_REFERENCE = {"legalAge", "requiredQuarters", "startAgeRules", "minimumNetMonthly"}
 erreurs = []
 
 
@@ -55,13 +57,15 @@ def main(chemin):
         sid = s["id"]
         if s["type"] not in ("statusQuo", "candidate"):
             err(f"{sid} : type inconnu")
+        if s.get("computable", True) is False and not s.get("notComputableReason"):
+            err(f"{sid} : raison manquante pour un programme non chiffrable")
         params = s.get("params", {})
         for cle in CLES:
             p = params.get(cle)
             if p is None:
                 if s["type"] == "candidate":
                     err(f"{sid}.{cle} : à préciser ou marquer « unspecified » (même grille pour tous)")
-                elif s.get("reference") and cle != "minimumNetMonthly":
+                elif s.get("reference") and cle not in FACULTATIFS_REFERENCE:
                     err(f"{sid}.{cle} : la référence doit tout préciser")
                 continue
             if "value" in p:
@@ -69,6 +73,12 @@ def main(chemin):
                     err(f"{sid}.{cle} : valeur sans source")
                 if cle == "bareme":
                     verifier_bareme(sid, p["value"])
+                if cle == "legalAge" and not re.fullmatch(r"\d{2}y([0-9]|1[01])m", p["value"]):
+                    err(f"{sid} : âge illisible {p['value']}")
+                if cle == "startAgeRules":
+                    for r in p["value"]:
+                        if not 14 <= r["startedBefore"] <= 40:
+                            err(f"{sid} : âge de début hors limites")
             elif p.get("status") != "unspecified":
                 err(f"{sid}.{cle} : statut inconnu")
         for m in s.get("measures", []):
