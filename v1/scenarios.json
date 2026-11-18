@@ -27,8 +27,12 @@
       {
         "label": "Prélèvements au taux normal : 9,1 % (base), 10,1 % (complémentaire)",
         "url": "https://www.lafinancepourtous.com/pratique/retraite/preparer-son-depart-a-la-retraite/le-montant-de-la-retraite-du-brut-au-net/"
+      },
+      {
+        "label": "Minoration Agirc-Arrco de 1,25 % par trimestre manquant, appliquée dans tous les scénarios (hypothèse de l'app)"
       }
-    ]
+    ],
+    "complementaryReductionPerQuarter": 1.25
   },
   "scenarios": [
     {
@@ -676,7 +680,7 @@
         "legalAge": {
           "value": "62y0m",
           "source": {
-            "label": "Présentation de la réforme du RN, 17/11/2026 (Public Sénat)",
+            "label": "Réforme présentée par Marine Le Pen le 17/11/2026 (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
             "date": "2026-11-17"
           }
@@ -684,7 +688,7 @@
         "requiredQuarters": {
           "value": 168,
           "source": {
-            "label": "Présentation de la réforme du RN, 17/11/2026 (Public Sénat)",
+            "label": "Réforme présentée par Marine Le Pen le 17/11/2026 (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
             "date": "2026-11-17"
           }
@@ -713,19 +717,34 @@
             }
           ],
           "source": {
-            "label": "RN, 17/11/2026 : 60 ans et 40 annuités avant 20 ans, 62 ans et 42 annuités après 23 ans ; paliers intermédiaires de 6 mois (trimestres intermédiaires non précisés, interpolés)",
+            "label": "Réforme présentée par Marine Le Pen le 17/11/2026 (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
             "date": "2026-11-17"
           }
         },
         "decotePerQuarter": {
-          "status": "unspecified"
+          "value": 2.5,
+          "source": {
+            "label": "Décote de 5 % de la pension par trimestre manquant, soit 2,5 points de taux (17/11/2026)",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
+            "date": "2026-11-17"
+          }
         },
         "decoteMaxQuarters": {
-          "status": "unspecified"
+          "value": 10,
+          "source": {
+            "label": "Décote plafonnée à 50 % de la pension, soit 10 trimestres (17/11/2026)",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
+            "date": "2026-11-17"
+          }
         },
         "fullRateAge": {
-          "status": "unspecified"
+          "value": "67y0m",
+          "source": {
+            "label": "Taux plein à 67 ans maintenu, même sans tous les trimestres (17/11/2026)",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
+            "date": "2026-11-17"
+          }
         },
         "surcotePerQuarter": {
           "status": "unspecified"
@@ -739,55 +758,64 @@
       },
       "measures": [
         {
-          "text": "Départ entre 60 et 62 ans selon l'âge de début de carrière, par paliers de 6 mois",
+          "text": "Départ entre 60 et 62 ans, en 5 paliers de 6 mois selon l'âge de début de carrière ; taux plein après 40 ans (160 trimestres) pour un début avant 20 ans, 42 ans pour un début après 23 ans. Les paliers intermédiaires (20 à 23 ans) ne sont pas détaillés : l'app les interpole",
           "modelled": true,
           "source": {
-            "label": "Présentation de la réforme du RN, 17/11/2026 (Public Sénat)",
+            "label": "Réforme présentée par Marine Le Pen le 17/11/2026 (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
             "date": "2026-11-17"
           }
         },
         {
-          "text": "40 annuités pour qui a commencé avant 20 ans, 42 annuités après 23 ans",
+          "text": "Décote portée à 5 % de la pension par trimestre manquant (contre 1,25 % aujourd'hui), plafonnée à 50 % ; l'app l'applique à la pension de base",
           "modelled": true,
           "source": {
-            "label": "Présentation de la réforme du RN, 17/11/2026 (Public Sénat)",
+            "label": "Réforme présentée par Marine Le Pen le 17/11/2026 (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
             "date": "2026-11-17"
           }
         },
         {
-          "text": "Décote portée à 5 % par trimestre manquant, plafonnée à 50 % (non modélisée : à confirmer)",
-          "modelled": false,
+          "text": "Règles de carrière longue conservées quand elles sont plus favorables ; taux plein à 67 ans et 8 trimestres par enfant pour les mères maintenus",
+          "modelled": true,
           "source": {
-            "label": "Présentation de la réforme du RN, 17/11/2026 (Public Sénat)",
+            "label": "Réforme présentée par Marine Le Pen le 17/11/2026 (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
             "date": "2026-11-17"
           }
         },
         {
-          "text": "Validation d'un trimestre plus exigeante (mi-temps au moins) et droits réduits pour le chômage",
+          "text": "Validation d'un trimestre : au moins un mi-temps travaillé, sans critère de salaire (aujourd'hui 150 heures au Smic). Sans effet pour une carrière à temps plein, l'hypothèse de l'app ; pénalise les temps très partiels",
           "modelled": false,
           "source": {
-            "label": "Présentation de la réforme du RN, 17/11/2026 (Public Sénat)",
+            "label": "Réforme présentée par Marine Le Pen le 17/11/2026 (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
             "date": "2026-11-17"
           }
         },
         {
-          "text": "Pilier de capitalisation obligatoire, d'abord pour les actifs de 52 ans au plus",
+          "text": "Droits à retraite acquis pendant le chômage réduits",
           "modelled": false,
           "source": {
-            "label": "Présentation de la réforme du RN, 17/11/2026 (Public Sénat)",
+            "label": "Réforme présentée par Marine Le Pen le 17/11/2026 (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
             "date": "2026-11-17"
           }
         },
         {
-          "text": "Abrogation de la réforme de 2023 au 1er janvier 2028, déploiement jusqu'en 2032 (l'app applique la cible)",
+          "text": "Majoration de 10 % des pères de 3 enfants supprimée progressivement, celle des mères portée à 12 %",
           "modelled": false,
           "source": {
-            "label": "Présentation de la réforme du RN, 17/11/2026 (Public Sénat)",
+            "label": "Réforme présentée par Marine Le Pen le 17/11/2026 (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
+            "date": "2026-11-17"
+          }
+        },
+        {
+          "text": "Pilier de capitalisation obligatoire, à commencer par les actifs jusqu'à 52 ans ; abrogation de la réforme 2023 au 1er janvier 2028",
+          "modelled": false,
+          "source": {
+            "label": "Réforme présentée par Marine Le Pen le 17/11/2026 (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
             "date": "2026-11-17"
           }
@@ -1785,6 +1813,860 @@
       ],
       "computable": false,
       "notComputableReason": "La baisse de l'âge n'est pas chiffrée."
+    },
+    {
+      "id": "bouamrane",
+      "type": "candidate",
+      "label": "Karim Bouamrane",
+      "sortName": "Bouamrane",
+      "party": "Parti socialiste",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "value": "62y0m",
+          "source": {
+            "label": "Projet présidentiel du Parti socialiste, rapporté par LCP le 16/09/2026",
+            "url": "https://lcp.fr/actualites/presidentielle-que-proposent-les-candidats-a-l-elysee-sur-les-retraites-441751",
+            "date": "2026-09-16"
+          }
+        },
+        "requiredQuarters": {
+          "value": 172,
+          "source": {
+            "label": "Projet présidentiel du Parti socialiste, rapporté par LCP le 16/09/2026",
+            "url": "https://lcp.fr/actualites/presidentielle-que-proposent-les-candidats-a-l-elysee-sur-les-retraites-441751",
+            "date": "2026-09-16"
+          }
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Âge légal ramené à 62 ans, sans en faire un critère central ; 43 ans de cotisation, adaptables selon la pénibilité (projet du PS, dont il est le candidat)",
+          "modelled": true,
+          "source": {
+            "label": "Projet présidentiel du Parti socialiste, rapporté par LCP le 16/09/2026",
+            "url": "https://lcp.fr/actualites/presidentielle-que-proposent-les-candidats-a-l-elysee-sur-les-retraites-441751",
+            "date": "2026-09-16"
+          }
+        }
+      ]
+    },
+    {
+      "id": "labib",
+      "type": "candidate",
+      "label": "Selma Labib",
+      "sortName": "Labib",
+      "party": "NPA-Révolutionnaires",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Hausse de 400 € par mois des salaires et des pensions pour tous",
+          "modelled": false,
+          "source": {
+            "label": "npa-revolutionnaires.org, Fête de l'Humanité 2026, cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite",
+            "date": "2026-09"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Pas d'âge ni de durée chiffrés."
+    },
+    {
+      "id": "asselineau",
+      "type": "candidate",
+      "label": "François Asselineau",
+      "sortName": "Asselineau",
+      "party": "Union populaire républicaine",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Inscrire la retraite par répartition dans la Constitution ; garantie par l'État du pouvoir d'achat des retraités ; pas d'exposition des pensions à la Bourse (programme de 2022)",
+          "modelled": false,
+          "source": {
+            "label": "upr.fr, programme présidentiel 2022, cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Pas d'âge ni de durée chiffrés."
+    },
+    {
+      "id": "branco",
+      "type": "candidate",
+      "label": "Juan Branco",
+      "sortName": "Branco",
+      "party": "Sans étiquette",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Aligner les régimes et les taux de rendement entre générations ; taux selon l'espérance de vie par catégorie socioprofessionnelle ; renforcer les petits revenus",
+          "modelled": false,
+          "source": {
+            "label": "ruches.org/le-projet, cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Pas d'âge ni de durée chiffrés."
+    },
+    {
+      "id": "batho",
+      "type": "candidate",
+      "label": "Delphine Batho",
+      "sortName": "Batho",
+      "party": "Génération écologie",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "becht",
+      "type": "candidate",
+      "label": "Olivier Becht",
+      "sortName": "Becht",
+      "party": "Sans étiquette",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "dubuisson",
+      "type": "candidate",
+      "label": "Emmanuel Dubuisson",
+      "sortName": "Dubuisson",
+      "party": "Sans étiquette",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "durif",
+      "type": "candidate",
+      "label": "Sylvain Durif",
+      "sortName": "Durif",
+      "party": "Elvita",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "egger",
+      "type": "candidate",
+      "label": "Clara Egger",
+      "sortName": "Egger",
+      "party": "Solution démocratique",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "lalanne",
+      "type": "candidate",
+      "label": "Francis Lalanne",
+      "sortName": "Lalanne",
+      "party": "Sans étiquette",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "markovic",
+      "type": "candidate",
+      "label": "Mira Markovic",
+      "sortName": "Markovic",
+      "party": "Parti animaliste",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "mathieu",
+      "type": "candidate",
+      "label": "Benoît Mathieu",
+      "sortName": "Mathieu",
+      "party": "Sans étiquette",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "platret",
+      "type": "candidate",
+      "label": "Gilles Platret",
+      "sortName": "Platret",
+      "party": "Sans étiquette",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "polony",
+      "type": "candidate",
+      "label": "Natacha Polony",
+      "sortName": "Polony",
+      "party": "Nous sommes la France",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "riner",
+      "type": "candidate",
+      "label": "Teddy Riner",
+      "sortName": "Riner",
+      "party": "Sans étiquette",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "rohou",
+      "type": "candidate",
+      "label": "Erwan Rohou",
+      "sortName": "Rohou",
+      "party": "Mouvement écologiste indépendant",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "modelled": false,
+          "source": {
+            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
+            "url": "https://candidats2027.org/",
+            "date": "2026-11-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
     }
   ]
 }
