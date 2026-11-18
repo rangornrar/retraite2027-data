@@ -10,7 +10,7 @@ import json
 import re
 import sys
 
-CLES = ["bareme", "legalAge", "requiredQuarters", "startAgeRules", "decotePerQuarter",
+CLES = ["bareme", "legalAge", "requiredQuarters", "startAgeRules", "earlyRetirement", "decotePerQuarter",
         "decoteMaxQuarters", "fullRateAge", "surcotePerQuarter", "minimumNetMonthly"]
 FACULTATIFS_REFERENCE = {"legalAge", "requiredQuarters", "startAgeRules", "minimumNetMonthly"}
 erreurs = []
@@ -75,6 +75,14 @@ def main(chemin):
                     verifier_bareme(sid, p["value"])
                 if cle == "legalAge" and not re.fullmatch(r"\d{2}y([0-9]|1[01])m", p["value"]):
                     err(f"{sid} : âge illisible {p['value']}")
+                if cle == "earlyRetirement":
+                    for r in p["value"]:
+                        if not 14 <= r["startedBefore"] <= 40:
+                            err(f"{sid} : carrière longue, âge de début hors limites")
+                        if not re.fullmatch(r"\d{2}y([0-9]|1[01])m", r["age"]):
+                            err(f"{sid} : carrière longue, âge illisible {r['age']}")
+                        if r.get("bornTo") and mois(r["bornTo"]) < mois(r["bornFrom"]):
+                            err(f"{sid} : carrière longue, période inversée")
                 if cle == "startAgeRules":
                     for r in p["value"]:
                         if not 14 <= r["startedBefore"] <= 40:

@@ -1,10 +1,10 @@
 {
   "formatVersion": 1,
-  "publishedAt": "2026-11-17",
+  "publishedAt": "2026-11-18",
   "constants": {
     "pass": 48060,
     "pointPurchase": 20.1877,
-    "pointValue": 1.4386,
+    "pointValue": 1.4587,
     "rateT1": 0.062,
     "rateT2": 0.17,
     "socialBase": 0.091,
@@ -16,9 +16,9 @@
         "date": "2026-01-01"
       },
       {
-        "label": "Point Agirc-Arrco : prix d'achat 20,1877 €, valeur 1,4386 € (revalorisation du 1er novembre 2026 à vérifier)",
-        "url": "https://www.lafinancepourtous.com/2025/10/20/retraites-complementaires-agirc-arrco-aucune-revalorisation-au-1er-novembre-2025/",
-        "date": "2025-11-01"
+        "label": "Point Agirc-Arrco : prix d'achat 20,1877 €, valeur de service 1,4587 € au 1er novembre 2026 (+1,4 %)",
+        "url": "https://www.lafinancepourtous.com/2026/10/19/retraites-complementaires-agirc-arrco-hausse-de-14-au-1er-novembre-2026/",
+        "date": "2026-11-01"
       },
       {
         "label": "Taux de points 6,20 % (T1) et 17 % (T2)",
@@ -36,7 +36,7 @@
       "type": "statusQuo",
       "label": "Loi actuelle",
       "subtitle": "Réforme 2023 suspendue (LFSS 2026)",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "reference": true,
       "params": {
         "bareme": {
@@ -124,6 +124,107 @@
           "source": {
             "label": "Code de la sécurité sociale (surcote)"
           }
+        },
+        "earlyRetirement": {
+          "value": [
+            {
+              "startedBefore": 16,
+              "bornFrom": "1961-01",
+              "age": "60y0m",
+              "bornTo": "1963-08"
+            },
+            {
+              "startedBefore": 18,
+              "bornFrom": "1961-01",
+              "age": "60y0m",
+              "bornTo": "1963-08"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1961-01",
+              "age": "60y0m",
+              "bornTo": "1963-08"
+            },
+            {
+              "startedBefore": 16,
+              "bornFrom": "1963-09",
+              "age": "58y0m"
+            },
+            {
+              "startedBefore": 18,
+              "bornFrom": "1963-09",
+              "age": "60y0m"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1963-09",
+              "age": "60y3m",
+              "bornTo": "1963-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1964-01",
+              "age": "60y6m",
+              "bornTo": "1964-12"
+            },
+            {
+              "startedBefore": 21,
+              "bornFrom": "1965-04",
+              "age": "63y0m"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1965-01",
+              "age": "60y9m",
+              "bornTo": "1965-11"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1965-12",
+              "age": "60y8m",
+              "bornTo": "1965-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1966-01",
+              "age": "60y9m",
+              "bornTo": "1966-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1967-01",
+              "age": "61y0m",
+              "bornTo": "1967-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1968-01",
+              "age": "61y3m",
+              "bornTo": "1968-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1969-01",
+              "age": "61y6m",
+              "bornTo": "1969-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1970-01",
+              "age": "61y9m",
+              "bornTo": "1970-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1971-01",
+              "age": "62y0m"
+            }
+          ],
+          "source": {
+            "label": "Retraite anticipée carrière longue après la LFSS 2026 (art. 104 ; décret n° 2026-344 du 7 mai 2026), tableau CFDT",
+            "url": "https://www.cfdt-ufetam.org/wp-content/uploads/2026/07/retraite_actifs_annexe_2.pdf",
+            "date": "2026-05-07"
+          }
         }
       },
       "measures": [
@@ -137,10 +238,12 @@
           }
         },
         {
-          "text": "Retraite anticipée pour carrière longue, avec un calendrier adapté",
-          "modelled": false,
+          "text": "Retraite anticipée pour carrière longue : départ dès 58 ans (début avant 16 ans), 60 ans (avant 18 ans), 60 à 62 ans selon la génération (avant 20 ans) ou 63 ans (avant 21 ans), avec la durée requise cotisée ; 2 trimestres pour enfants au plus comptent comme cotisés",
+          "modelled": true,
           "source": {
-            "label": "Décret d'application de la LFSS 2026"
+            "label": "Retraite anticipée carrière longue après la LFSS 2026 (art. 104 ; décret n° 2026-344 du 7 mai 2026), tableau CFDT",
+            "url": "https://www.cfdt-ufetam.org/wp-content/uploads/2026/07/retraite_actifs_annexe_2.pdf",
+            "date": "2026-05-07"
           }
         }
       ]
@@ -150,7 +253,7 @@
       "type": "statusQuo",
       "label": "Réforme 2023 reprend",
       "subtitle": "Trajectoire initiale de la loi de 2023",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "value": [
@@ -237,6 +340,95 @@
           "source": {
             "label": "Code de la sécurité sociale (surcote)"
           }
+        },
+        "earlyRetirement": {
+          "value": [
+            {
+              "startedBefore": 16,
+              "bornFrom": "1961-01",
+              "age": "60y0m",
+              "bornTo": "1963-08"
+            },
+            {
+              "startedBefore": 18,
+              "bornFrom": "1961-01",
+              "age": "60y0m",
+              "bornTo": "1963-08"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1961-01",
+              "age": "60y0m",
+              "bornTo": "1963-08"
+            },
+            {
+              "startedBefore": 16,
+              "bornFrom": "1963-09",
+              "age": "58y0m"
+            },
+            {
+              "startedBefore": 18,
+              "bornFrom": "1963-09",
+              "age": "60y0m"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1963-09",
+              "age": "60y3m",
+              "bornTo": "1963-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1964-01",
+              "age": "60y6m",
+              "bornTo": "1964-12"
+            },
+            {
+              "startedBefore": 21,
+              "bornFrom": "1965-04",
+              "age": "63y0m"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1965-01",
+              "age": "60y9m",
+              "bornTo": "1965-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1966-01",
+              "age": "61y0m",
+              "bornTo": "1966-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1967-01",
+              "age": "61y3m",
+              "bornTo": "1967-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1968-01",
+              "age": "61y6m",
+              "bornTo": "1968-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1969-01",
+              "age": "61y9m",
+              "bornTo": "1969-12"
+            },
+            {
+              "startedBefore": 20,
+              "bornFrom": "1970-01",
+              "age": "62y0m"
+            }
+          ],
+          "source": {
+            "label": "Loi n° 2023-270 du 14 avril 2023, art. 11 (retraite anticipée carrière longue)",
+            "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047445077",
+            "date": "2023-04-14"
+          }
         }
       },
       "measures": [
@@ -245,6 +437,15 @@
           "modelled": true,
           "source": {
             "label": "Loi n° 2023-270 du 14 avril 2023",
+            "date": "2023-04-14"
+          }
+        },
+        {
+          "text": "Retraite anticipée pour carrière longue : 58, 60, 60 à 62 ou 63 ans selon l'âge de début, avec la durée requise cotisée",
+          "modelled": true,
+          "source": {
+            "label": "Loi n° 2023-270 du 14 avril 2023, art. 11 (retraite anticipée carrière longue)",
+            "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047445077",
             "date": "2023-04-14"
           }
         }
@@ -256,7 +457,7 @@
       "label": "Nathalie Arthaud",
       "sortName": "Arthaud",
       "party": "Lutte ouvrière",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -264,15 +465,17 @@
         "legalAge": {
           "value": "60y0m",
           "source": {
-            "label": "Lutte ouvrière, programme cité par votons-2027.fr",
-            "url": "https://votons-2027.fr/candidats/arthaud"
+            "label": "CNews, 02/10/2026, cité par Selectra",
+            "url": "https://selectra.info/finance/actualites/marche/age-depart-retraite-propositions-candidats",
+            "date": "2026-10-02"
           }
         },
         "requiredQuarters": {
-          "value": 150,
+          "value": 160,
           "source": {
-            "label": "Lutte ouvrière, programme cité par votons-2027.fr",
-            "url": "https://votons-2027.fr/candidats/arthaud"
+            "label": "CNews, 02/10/2026, cité par Selectra",
+            "url": "https://selectra.info/finance/actualites/marche/age-depart-retraite-propositions-candidats",
+            "date": "2026-10-02"
           }
         },
         "startAgeRules": {
@@ -291,36 +494,29 @@
           "status": "unspecified"
         },
         "minimumNetMonthly": {
-          "value": 2000,
-          "source": {
-            "label": "Lutte ouvrière, programme cité par votons-2027.fr",
-            "url": "https://votons-2027.fr/candidats/arthaud"
-          }
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
         }
       },
       "measures": [
         {
-          "text": "Abroger la réforme des retraites et fixer l'âge légal à 60 ans, avec 37,5 annuités de cotisation au plus",
+          "text": "Retraite à 60 ans avec 40 annuités",
           "modelled": true,
           "source": {
-            "label": "Lutte ouvrière, programme cité par votons-2027.fr",
-            "url": "https://votons-2027.fr/candidats/arthaud"
+            "label": "CNews, 02/10/2026, cité par Selectra",
+            "url": "https://selectra.info/finance/actualites/marche/age-depart-retraite-propositions-candidats",
+            "date": "2026-10-02"
           }
         },
         {
-          "text": "Pension minimum de 2 000 € net par mois, indexée sur les prix",
-          "modelled": true,
-          "source": {
-            "label": "Lutte ouvrière, programme cité par votons-2027.fr",
-            "url": "https://votons-2027.fr/candidats/arthaud"
-          }
-        },
-        {
-          "text": "Une autre source (CNews, 02/10/2026) mentionne 40 annuités : l'app retient le programme publié",
+          "text": "Augmentation massive des salaires, des allocations et des pensions, indexées sur les prix ; Smic à 2 200 €",
           "modelled": false,
           "source": {
-            "label": "Selectra",
-            "url": "https://selectra.info/finance/actualites/marche/age-depart-retraite-propositions-candidats"
+            "label": "Lutte ouvrière, dépliant du 3 novembre 2026",
+            "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/11/Depliant-NA-3nov.pdf",
+            "date": "2026-11-03"
           }
         }
       ]
@@ -331,7 +527,7 @@
       "label": "Gabriel Attal",
       "sortName": "Attal",
       "party": "Renaissance",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -358,6 +554,9 @@
           "status": "unspecified"
         },
         "minimumNetMonthly": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
           "status": "unspecified"
         }
       },
@@ -397,7 +596,7 @@
       "label": "Raphaël Glucksmann",
       "sortName": "Glucksmann",
       "party": "Place publique",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -430,6 +629,9 @@
         },
         "minimumNetMonthly": {
           "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
         }
       },
       "measures": [
@@ -449,6 +651,14 @@
             "label": "Public Sénat",
             "url": "https://www.publicsenat.fr/actualites/politique/reculer-ou-avancer-lage-legal-avec-ou-sans-capitalisation-ce-que-proposent-les-principaux-candidats-a-lelection-presidentielle-sur-les-retraites"
           }
+        },
+        {
+          "text": "Le programme diffusé par Place publique ne fixe pas d'âge légal (« certains à 60 ans, d'autres plus tard ») : l'app retient les 62 ans rapportés par franceinfo le 12/10/2026",
+          "modelled": false,
+          "source": {
+            "label": "Programme Place publique, cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite"
+          }
         }
       ]
     },
@@ -458,7 +668,7 @@
       "label": "Marine Le Pen",
       "sortName": "Le Pen",
       "party": "Rassemblement national",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -521,6 +731,9 @@
           "status": "unspecified"
         },
         "minimumNetMonthly": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
           "status": "unspecified"
         }
       },
@@ -587,7 +800,7 @@
       "label": "David Lisnard",
       "sortName": "Lisnard",
       "party": "Nouvelle Énergie",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -618,6 +831,9 @@
           "status": "unspecified"
         },
         "minimumNetMonthly": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
           "status": "unspecified"
         }
       },
@@ -654,7 +870,7 @@
       "label": "Jean-Luc Mélenchon",
       "sortName": "Mélenchon",
       "party": "La France insoumise",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -695,6 +911,9 @@
             "url": "https://www.economiematin.fr/?p=238883",
             "date": "2026-11-07"
           }
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
         }
       },
       "measures": [
@@ -731,7 +950,7 @@
       "label": "Édouard Philippe",
       "sortName": "Philippe",
       "party": "Horizons",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "value": [
@@ -842,6 +1061,9 @@
         },
         "minimumNetMonthly": {
           "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
         }
       },
       "measures": [
@@ -880,7 +1102,7 @@
       "label": "Bruno Retailleau",
       "sortName": "Retailleau",
       "party": "Les Républicains",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -888,16 +1110,13 @@
         "legalAge": {
           "value": "63y0m",
           "source": {
-            "label": "Bruno Retailleau sur LCI (LCP)",
-            "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65"
+            "label": "Bruno Retailleau sur LCI, rapporté par LCP le 23/09/2026",
+            "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65",
+            "date": "2026-09-23"
           }
         },
         "requiredQuarters": {
-          "value": 172,
-          "source": {
-            "label": "Carrière complète de 43 années pour un taux plein à 63 ans",
-            "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65"
-          }
+          "status": "unspecified"
         },
         "startAgeRules": {
           "status": "unspecified"
@@ -905,8 +1124,9 @@
         "decotePerQuarter": {
           "value": 0.875,
           "source": {
-            "label": "Décote de 7 % par an avant le taux plein (0,875 point par trimestre)",
-            "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65"
+            "label": "Décote de 7 % par an avant 65 ans (0,875 point par trimestre), LCP 23/09/2026",
+            "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65",
+            "date": "2026-09-23"
           }
         },
         "decoteMaxQuarters": {
@@ -915,8 +1135,9 @@
         "fullRateAge": {
           "value": "65y0m",
           "source": {
-            "label": "Bruno Retailleau sur LCI (LCP)",
-            "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65"
+            "label": "Bruno Retailleau sur LCI, rapporté par LCP le 23/09/2026",
+            "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65",
+            "date": "2026-09-23"
           }
         },
         "surcotePerQuarter": {
@@ -924,6 +1145,14 @@
         },
         "minimumNetMonthly": {
           "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "value": [],
+          "source": {
+            "label": "Âge minimal de 63 ans pour tous, carrières longues comprises (taux plein à 63 ans si carrière complète)",
+            "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65",
+            "date": "2026-09-23"
+          }
         }
       },
       "measures": [
@@ -975,7 +1204,7 @@
       "label": "Fabien Roussel",
       "sortName": "Roussel",
       "party": "Parti communiste français",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -1012,6 +1241,9 @@
           "status": "unspecified"
         },
         "minimumNetMonthly": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
           "status": "unspecified"
         }
       },
@@ -1041,7 +1273,7 @@
       "label": "François Ruffin",
       "sortName": "Ruffin",
       "party": "Debout !",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -1079,6 +1311,9 @@
         },
         "minimumNetMonthly": {
           "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
         }
       },
       "measures": [
@@ -1107,7 +1342,7 @@
       "label": "Marine Tondelier",
       "sortName": "Tondelier",
       "party": "Les Écologistes",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -1148,6 +1383,9 @@
           "status": "unspecified"
         },
         "minimumNetMonthly": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
           "status": "unspecified"
         }
       },
@@ -1193,7 +1431,7 @@
       "label": "Éric Zemmour",
       "sortName": "Zemmour",
       "party": "Reconquête",
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -1226,6 +1464,9 @@
         },
         "minimumNetMonthly": {
           "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
         }
       },
       "measures": [
@@ -1248,6 +1489,302 @@
           }
         }
       ]
+    },
+    {
+      "id": "kazib",
+      "type": "candidate",
+      "label": "Anasse Kazib",
+      "sortName": "Kazib",
+      "party": "Révolution permanente",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "value": "60y0m",
+          "source": {
+            "label": "Programme d'Anasse Kazib (anasse2027.fr), cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite"
+          }
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "value": "60y0m",
+          "source": {
+            "label": "Programme d'Anasse Kazib (anasse2027.fr), cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite"
+          }
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Retraite à 60 ans à taux plein, sans condition d'annuités (55 ans pour les métiers pénibles)",
+          "modelled": true,
+          "source": {
+            "label": "Programme d'Anasse Kazib (anasse2027.fr), cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite"
+          }
+        },
+        {
+          "text": "Pensions et minimum vieillesse au moins au niveau du Smic, quel que soit le nombre de trimestres",
+          "modelled": false,
+          "source": {
+            "label": "Programme d'Anasse Kazib (anasse2027.fr), cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dupont-aignan",
+      "type": "candidate",
+      "label": "Nicolas Dupont-Aignan",
+      "sortName": "Dupont-Aignan",
+      "party": "Debout la France",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "value": "62y9m",
+          "source": {
+            "label": "Programme de Nicolas Dupont-Aignan, rapporté par Parlons Politique",
+            "url": "https://www.parlons-politique.fr/elections/ce-que-la-sortie-de-lunion-europeenne-changerait-pour-les-retraites-lemploi-et-le-pouvoir-de-decision-des-francais_27438/"
+          }
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Âge de départ maintenu à 62 ans et 9 mois",
+          "modelled": true,
+          "source": {
+            "label": "Programme de Nicolas Dupont-Aignan, rapporté par Parlons Politique",
+            "url": "https://www.parlons-politique.fr/elections/ce-que-la-sortie-de-lunion-europeenne-changerait-pour-les-retraites-lemploi-et-le-pouvoir-de-decision-des-francais_27438/"
+          }
+        },
+        {
+          "text": "10 000 € placés pour chaque nouveau-né dans un fonds public, versés en complément à 60 ans",
+          "modelled": false,
+          "source": {
+            "label": "debout-la-france.fr, cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bertrand",
+      "type": "candidate",
+      "label": "Xavier Bertrand",
+      "sortName": "Bertrand",
+      "party": "Nous France",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Reculer l'âge légal, sans chiffre précisé",
+          "modelled": false,
+          "source": {
+            "label": "nousfrance.fr, août 2026, cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite",
+            "date": "2026-08"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Le recul de l'âge légal n'est pas chiffré."
+    },
+    {
+      "id": "cazeneuve",
+      "type": "candidate",
+      "label": "Bernard Cazeneuve",
+      "sortName": "Cazeneuve",
+      "party": "La Convention",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Privilégier une règle de durée de cotisation plutôt qu'un relèvement de l'âge légal, en renégociant la trajectoire de 2014",
+          "modelled": false,
+          "source": {
+            "label": "Lettre de Bernard Cazeneuve aux Français, 15/07/2026",
+            "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf",
+            "date": "2026-07-15"
+          }
+        },
+        {
+          "text": "Rétablir les critères de pénibilité ; cohérence des règles de carrière longue ; corriger les pensions des carrières interrompues",
+          "modelled": false,
+          "source": {
+            "label": "Lettre de Bernard Cazeneuve aux Français, 15/07/2026",
+            "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf",
+            "date": "2026-07-15"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Ni âge ni durée chiffrés."
+    },
+    {
+      "id": "philippot",
+      "type": "candidate",
+      "label": "Florian Philippot",
+      "sortName": "Philippot",
+      "party": "Les Patriotes",
+      "updatedAt": "2026-11-18",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Abaisser l'âge de départ, sans chiffre précisé",
+          "modelled": false,
+          "source": {
+            "label": "Programme des Patriotes (septembre 2026), cité par votons-2027.fr",
+            "url": "https://votons-2027.fr/themes/retraite",
+            "date": "2026-09"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "La baisse de l'âge n'est pas chiffrée."
     }
   ]
 }
