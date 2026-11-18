@@ -25,14 +25,44 @@
         "url": "https://calcforlife.com/fr/calcul-agirc-arrco/"
       },
       {
-        "label": "Prélèvements au taux normal : 9,1 % (base), 10,1 % (complémentaire)",
-        "url": "https://www.lafinancepourtous.com/pratique/retraite/preparer-son-depart-a-la-retraite/le-montant-de-la-retraite-du-brut-au-net/"
+        "label": "Minoration Agirc-Arrco de 1,25 % par trimestre manquant, appliquée dans tous les scénarios (hypothèse de l'app)"
       },
       {
-        "label": "Minoration Agirc-Arrco de 1,25 % par trimestre manquant, appliquée dans tous les scénarios (hypothèse de l'app)"
+        "label": "Prélèvements sociaux 2026 selon le RFR (1 part) : exonération jusqu'à 13 048 €, CSG 3,8 % jusqu'à 17 057 €, 6,6 % jusqu'à 26 472 €, 8,3 % au-delà ; + CRDS 0,5 %, Casa 0,3 % (sauf taux réduit), 1 % maladie sur la complémentaire",
+        "url": "https://selectra.info/finance/actualites/marche/csg-retraite-2026-taux-revenu-fiscal",
+        "date": "2026-01-01"
       }
     ],
-    "complementaryReductionPerQuarter": 1.25
+    "complementaryReductionPerQuarter": 1.25,
+    "socialTiers": [
+      {
+        "label": "exonérée",
+        "upTo": 13048,
+        "base": 0.0,
+        "complementary": 0.0,
+        "deductible": 0.0
+      },
+      {
+        "label": "taux réduit",
+        "upTo": 17057,
+        "base": 0.043,
+        "complementary": 0.053,
+        "deductible": 0.038
+      },
+      {
+        "label": "taux médian",
+        "upTo": 26472,
+        "base": 0.074,
+        "complementary": 0.084,
+        "deductible": 0.042
+      },
+      {
+        "label": "taux normal",
+        "base": 0.091,
+        "complementary": 0.101,
+        "deductible": 0.059
+      }
+    ]
   },
   "scenarios": [
     {
