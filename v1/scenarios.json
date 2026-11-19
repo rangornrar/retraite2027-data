@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "publishedAt": "2026-11-18",
+  "publishedAt": "2026-11-19",
   "constants": {
     "pass": 48060,
     "pointPurchase": 20.1877,
@@ -612,7 +612,7 @@
       "label": "Gabriel Attal",
       "sortName": "Attal",
       "party": "Renaissance",
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-19",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -670,6 +670,15 @@
             "label": "Gabriel Attal, présentation de sa proposition (LCP)",
             "url": "https://lcp.fr/actualites/retraites-avant-le-debat-sur-la-suspension-de-la-reforme-gabriel-attal-prone-une"
           }
+        },
+        {
+          "text": "Système universel aux règles communes, avec un volet de capitalisation ; garanties minimales et calcul encore à préciser",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
+          }
         }
       ],
       "computable": false,
@@ -681,7 +690,7 @@
       "label": "Raphaël Glucksmann",
       "sortName": "Glucksmann",
       "party": "Place publique",
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-19",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -689,9 +698,9 @@
         "legalAge": {
           "value": "62y0m",
           "source": {
-            "label": "franceinfo, 12/10/2026, cité par Selectra",
-            "url": "https://selectra.info/finance/actualites/marche/age-depart-retraite-propositions-candidats",
-            "date": "2026-10-12"
+            "label": "Âge de référence de 62 ans : franceinfo (12/10/2026), confirmé par Var-Actu (19/11/2026)",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
           }
         },
         "requiredQuarters": {
@@ -738,11 +747,20 @@
           }
         },
         {
-          "text": "Le programme diffusé par Place publique ne fixe pas d'âge légal (« certains à 60 ans, d'autres plus tard ») : l'app retient les 62 ans rapportés par franceinfo le 12/10/2026",
+          "text": "Le programme de Place publique parle d'un âge de référence plutôt que d'un âge légal (« certains à 60 ans, d'autres plus tard ») : l'app retient 62 ans comme âge de départ",
           "modelled": false,
           "source": {
             "label": "Programme Place publique, cité par votons-2027.fr",
             "url": "https://votons-2027.fr/themes/retraite"
+          }
+        },
+        {
+          "text": "Inciter ceux qui le peuvent à travailler plus longtemps ; mieux reconnaître la pénibilité et les écarts d'espérance de vie en bonne santé",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
           }
         }
       ]
@@ -753,7 +771,7 @@
       "label": "Marine Le Pen",
       "sortName": "Le Pen",
       "party": "Rassemblement national",
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-19",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -900,6 +918,15 @@
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-contient-la-reforme-des-retraites-presentee-par-marine-le-pen",
             "date": "2026-11-17"
           }
+        },
+        {
+          "text": "Coût brut estimé à 18,6 milliards d'euros en 2032, chiffre encore à confirmer selon la presse",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
+          }
         }
       ]
     },
@@ -909,7 +936,7 @@
       "label": "David Lisnard",
       "sortName": "Lisnard",
       "party": "Nouvelle Énergie",
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-19",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -970,6 +997,15 @@
             "label": "Programme Nouvelle Énergie, cité par votons-2027.fr",
             "url": "https://votons-2027.fr/candidats/lisnard/programme/retraite"
           }
+        },
+        {
+          "text": "Capitalisation développée progressivement, jusqu'à environ 40 % du financement des pensions",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
+          }
         }
       ]
     },
@@ -979,7 +1015,7 @@
       "label": "Jean-Luc Mélenchon",
       "sortName": "Mélenchon",
       "party": "La France insoumise",
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-19",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -1050,6 +1086,24 @@
             "label": "Programme LFI, cité par votons-2027.fr",
             "url": "https://votons-2027.fr/candidats/melenchon/programme/retraite"
           }
+        },
+        {
+          "text": "Périodes au RSA prises en compte pour les droits à retraite",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
+          }
+        },
+        {
+          "text": "Opposition à la capitalisation, suppression de ses avantages fiscaux",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
+          }
         }
       ]
     },
@@ -1059,7 +1113,7 @@
       "label": "Édouard Philippe",
       "sortName": "Philippe",
       "party": "Horizons",
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-19",
       "params": {
         "bareme": {
           "value": [
@@ -1202,6 +1256,24 @@
             "url": "https://lcp.fr/actualites/retraites-edouard-philippe-veut-porter-l-age-de-depart-a-65-ans-et-la-duree-de",
             "date": "2026-09-29"
           }
+        },
+        {
+          "text": "Plan d'épargne retraite pour chaque Français, avec 500 € versés par l'État au premier emploi",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
+          }
+        },
+        {
+          "text": "Départs anticipés maintenus pour handicap, incapacité et carrières longues (règles actuelles dans l'app)",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
+          }
         }
       ]
     },
@@ -1211,7 +1283,7 @@
       "label": "Bruno Retailleau",
       "sortName": "Retailleau",
       "party": "Les Républicains",
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-19",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -1303,6 +1375,24 @@
           "source": {
             "label": "Bruno Retailleau sur LCI (LCP)",
             "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65"
+          }
+        },
+        {
+          "text": "Illustration du candidat pour une pension de 1 800 € : 1 548 € à 63 ans, 1 674 € à 64 ans, 1 800 € à 65 ans. L'app applique la décote de 7 % par an à la pension de base ; la complémentaire garde sa minoration actuelle",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
+          }
+        },
+        {
+          "text": "Capitalisation partielle financée par des cotisations salariales et patronales",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
           }
         }
       ]
@@ -1451,7 +1541,7 @@
       "label": "Marine Tondelier",
       "sortName": "Tondelier",
       "party": "Les Écologistes",
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-19",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -1530,6 +1620,15 @@
           "source": {
             "label": "Programme des Écologistes",
             "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+          }
+        },
+        {
+          "text": "Rétablir les critères de pénibilité supprimés en 2017 (charges lourdes, postures pénibles, vibrations, agents chimiques)",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, synthèse des programmes retraite, 19/11/2026",
+            "url": "https://www.varactu.fr/retraite-a-60-62-ou-65-ans-voici-ce-qui-pourrait-changer-selon-le-prochain-president/",
+            "date": "2026-11-19"
           }
         }
       ]
