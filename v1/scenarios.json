@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "publishedAt": "2026-11-19",
+  "publishedAt": "2026-11-20",
   "constants": {
     "pass": 48060,
     "pointPurchase": 20.1877,
@@ -2847,6 +2847,68 @@
       ],
       "computable": false,
       "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+    },
+    {
+      "id": "villepin",
+      "type": "candidate",
+      "label": "Dominique de Villepin",
+      "sortName": "Villepin",
+      "party": "La France humaniste",
+      "updatedAt": "2026-11-20",
+      "params": {
+        "bareme": {
+          "status": "unspecified"
+        },
+        "legalAge": {
+          "status": "unspecified"
+        },
+        "requiredQuarters": {
+          "status": "unspecified"
+        },
+        "startAgeRules": {
+          "status": "unspecified"
+        },
+        "earlyRetirement": {
+          "status": "unspecified"
+        },
+        "decotePerQuarter": {
+          "status": "unspecified"
+        },
+        "decoteMaxQuarters": {
+          "status": "unspecified"
+        },
+        "fullRateAge": {
+          "status": "unspecified"
+        },
+        "surcotePerQuarter": {
+          "status": "unspecified"
+        },
+        "minimumNetMonthly": {
+          "status": "unspecified"
+        }
+      },
+      "measures": [
+        {
+          "text": "Candidature officiellement déclarée le 20/11/2026 ; renvoie la réforme des retraites à la négociation sociale et à des conventions citoyennes, sans proposition chiffrée",
+          "modelled": false,
+          "source": {
+            "label": "LCP, 20/11/2026",
+            "url": "https://lcp.fr/actualites/presidentielle-2027-dominique-de-villepin-officiellement-candidat-a-l-elysee-445372",
+            "date": "2026-11-20"
+          }
+        },
+        {
+          "text": "Position exprimée en juin 2025, avant la candidature : favorable à l'abrogation de la réforme de 2023, raisonner en annuités plutôt qu'en âge légal, système de retraite à points tenant compte de la pénibilité (aucun chiffre)",
+          "modelled": false,
+          "source": {
+            "label": "Econostrum, entretien France Inter du 23/06/2025",
+            "url": "https://econostrum.info/traumatisme-64-ans-vision-de-villepin-retraite/",
+            "date": "2025-06-24"
+          }
+        }
+      ],
+      "computable": false,
+      "notComputableReason": "Aucun paramètre de retraite chiffré à la date de vérification."
     }
   ]
 }
