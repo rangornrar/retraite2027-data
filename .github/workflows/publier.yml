@@ -20,6 +20,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 tools/valider.py v1/scenarios.json
+      - run: python3 tools/valider_fiscalite.py v1/fiscalite.json v1/scenarios.json
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'
         with:

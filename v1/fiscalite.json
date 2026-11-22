@@ -1,0 +1,1666 @@
+{
+  "formatVersion": 1,
+  "publishedAt": "2026-11-22",
+  "cotisations": {
+    "pass": 48060,
+    "oldAgeCapped": 0.069,
+    "oldAgeUncapped": 0.004,
+    "agircT1": 0.0401,
+    "agircT2": 0.0972,
+    "cet": 0.0014,
+    "source": "Taux salariés 2026 du secteur privé : vieillesse 6,90 % + 0,40 %, Agirc-Arrco et CEG 4,01 % / 9,72 %, CET 0,14 %"
+  },
+  "reference": {
+    "id": "loi-actuelle",
+    "params": {
+      "csgSalary": {
+        "value": {
+          "rate": 0.092,
+          "deductible": 0.068,
+          "crds": 0.005,
+          "base": 0.9825
+        },
+        "source": {
+          "label": "CSG 9,2 % dont 6,8 % déductible, CRDS 0,5 %, sur 98,25 % du salaire (code de la sécurité sociale, art. L136-1-2 et L136-8)"
+        }
+      },
+      "irBrackets": {
+        "value": [
+          {
+            "upTo": 11600,
+            "rate": 0
+          },
+          {
+            "upTo": 29579,
+            "rate": 0.11
+          },
+          {
+            "upTo": 84577,
+            "rate": 0.3
+          },
+          {
+            "upTo": 181917,
+            "rate": 0.41
+          },
+          {
+            "rate": 0.45
+          }
+        ],
+        "source": {
+          "label": "Barème 2026 des revenus 2025 (loi de finances 2026, art. 4)",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A14660",
+          "date": "2026-04-07"
+        }
+      },
+      "irDecote": {
+        "value": {
+          "single": 897,
+          "couple": 1483,
+          "rate": 0.4525
+        },
+        "source": {
+          "label": "Décote 2026 : 897 € (seul) ou 1 483 € (couple) − 45,25 % de l'impôt brut",
+          "url": "https://www.toutsurmesfinances.com/impots/?p=56674",
+          "date": "2026-02-19"
+        }
+      },
+      "workExpenses": {
+        "value": {
+          "rate": 0.1,
+          "min": 509,
+          "max": 14555
+        },
+        "source": {
+          "label": "Brochure pratique 2026, aide-mémoire (DGFiP)",
+          "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/aide_memoire.pdf",
+          "date": "2026-04-01"
+        }
+      },
+      "qfCap": {
+        "value": {
+          "cap": 1807
+        },
+        "source": {
+          "label": "Plafonnement du quotient familial : 1 807 € par demi-part (BOFiP)",
+          "url": "https://bofip.impots.gouv.fr/node/377293",
+          "date": "2026-04-07"
+        }
+      },
+      "qfFullShareSecondChild": {
+        "value": false,
+        "source": {
+          "label": "Demi-part pour chacun des deux premiers enfants, une part à partir du troisième (CGI, art. 194)"
+        }
+      },
+      "irExemptUnderAge": {
+        "value": {
+          "age": null
+        },
+        "source": {
+          "label": "Loi actuelle"
+        }
+      },
+      "youngChildReduction": {
+        "value": 0,
+        "source": {
+          "label": "Loi actuelle"
+        }
+      },
+      "wealthTax": {
+        "value": {
+          "totalBase": false,
+          "threshold": 1300000,
+          "brackets": [
+            {
+              "upTo": 800000,
+              "rate": 0
+            },
+            {
+              "upTo": 1300000,
+              "rate": 0.005
+            },
+            {
+              "upTo": 2570000,
+              "rate": 0.007
+            },
+            {
+              "upTo": 5000000,
+              "rate": 0.01
+            },
+            {
+              "upTo": 10000000,
+              "rate": 0.0125
+            },
+            {
+              "rate": 0.015
+            }
+          ],
+          "residenceAllowance": 0.3,
+          "decoteUntil": 1400000,
+          "decoteFlat": 17500,
+          "decoteRate": 0.0125
+        },
+        "source": {
+          "label": "IFI : seuil 1,3 M€, barème de 0,5 % à 1,5 %, abattement de 30 % sur la résidence principale (CGI, art. 964 à 983)"
+        }
+      },
+      "topFortunes": {
+        "value": [],
+        "source": {
+          "label": "Loi actuelle"
+        }
+      },
+      "inheritance": {
+        "value": {
+          "childAllowance": 100000,
+          "brackets": [
+            {
+              "upTo": 8072,
+              "rate": 0.05
+            },
+            {
+              "upTo": 12109,
+              "rate": 0.1
+            },
+            {
+              "upTo": 15932,
+              "rate": 0.15
+            },
+            {
+              "upTo": 552324,
+              "rate": 0.2
+            },
+            {
+              "upTo": 902838,
+              "rate": 0.3
+            },
+            {
+              "upTo": 1805677,
+              "rate": 0.4
+            },
+            {
+              "rate": 0.45
+            }
+          ]
+        },
+        "source": {
+          "label": "Droits de succession en ligne directe : abattement de 100 000 € par enfant, barème de 5 % à 45 % (CGI, art. 777 et 779)"
+        }
+      },
+      "corporateTax": {
+        "value": {
+          "rate": 0.25,
+          "reducedRate": 0.15,
+          "reducedCeiling": 42500,
+          "reducedMaxTurnover": 10000000
+        },
+        "source": {
+          "label": "IS 25 % ; 15 % jusqu'à 42 500 € de bénéfice pour les PME de moins de 10 M€ de CA (CGI, art. 219)"
+        }
+      },
+      "csb": {
+        "value": {
+          "rate": 0.033,
+          "allowance": 763000,
+          "minTurnover": 7630000
+        },
+        "source": {
+          "label": "Contribution sociale de 3,3 % sur l'IS au-delà de 763 000 €, CA d'au moins 7,63 M€ (CGI, art. 235 ter ZC)"
+        }
+      },
+      "exceptionalContribution": {
+        "value": [
+          {
+            "threshold": 1500000000.0,
+            "rate": 0.206
+          },
+          {
+            "threshold": 3000000000.0,
+            "rate": 0.412
+          }
+        ],
+        "source": {
+          "label": "Contribution exceptionnelle 2026 : 20,6 % de l'IS (CA de 1,5 à 3 Md€), 41,2 % au-delà (loi de finances 2026)",
+          "url": "https://www.economie.gouv.fr/node/3239369",
+          "date": "2026-02-19"
+        }
+      },
+      "reinvestedCoefficient": {
+        "value": 1,
+        "source": {
+          "label": "Loi actuelle"
+        }
+      },
+      "youngFounderExemptionYears": {
+        "value": 0,
+        "source": {
+          "label": "Loi actuelle"
+        }
+      },
+      "newCompanyMoratoriumYears": {
+        "value": 0,
+        "source": {
+          "label": "Loi actuelle"
+        }
+      },
+      "cvae": {
+        "value": {
+          "points": [
+            {
+              "turnover": 500000,
+              "rate": 0
+            },
+            {
+              "turnover": 3000000.0,
+              "rate": 0.00094
+            },
+            {
+              "turnover": 10000000.0,
+              "rate": 0.00263
+            },
+            {
+              "turnover": 50000000.0,
+              "rate": 0.00282
+            }
+          ],
+          "maxRate": 0.0028,
+          "additionalTax": 0.0923,
+          "cap85Above": 7600000
+        },
+        "source": {
+          "label": "CVAE 2026 : 0 % sous 500 000 € de CA, jusqu'à 0,28 % au-delà de 50 M€ ; valeur ajoutée plafonnée à 80 % ou 85 % du CA",
+          "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23546",
+          "date": "2026-03-30"
+        }
+      },
+      "c3s": {
+        "value": {
+          "threshold": 19000000.0,
+          "rate": 0.0016
+        },
+        "source": {
+          "label": "C3S : 0,16 % du CA au-delà de 19 M€ (code de la sécurité sociale, art. L137-30 et suivants)",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/valerie-pecresse/supprimer-la-contribution-sociale-de-solidarite-des-entreprises"
+        }
+      },
+      "cfeCoefficient": {
+        "value": 1,
+        "source": {
+          "label": "CFE : impôt local, montant saisi par l'utilisateur"
+        }
+      },
+      "cfeIndustrialExempt": {
+        "value": false,
+        "source": {
+          "label": "Loi actuelle"
+        }
+      },
+      "dividendTax": {
+        "value": [],
+        "source": {
+          "label": "Loi actuelle"
+        }
+      }
+    },
+    "measures": [
+      {
+        "theme": "REVENU",
+        "text": "Projet de loi de finances 2027 en discussion : barème revalorisé de 2,1 %, contribution exceptionnelle des grandes entreprises reconduite. L'app applique la loi votée pour 2026.",
+        "modelled": false,
+        "source": {
+          "label": "Toutsurmesfinances, barème 2027",
+          "url": "https://www.toutsurmesfinances.com/impots/bareme-de-l-impot-sur-le-revenu.html"
+        }
+      },
+      {
+        "theme": "PRODUCTION",
+        "text": "CVAE : suppression progressive jusqu'en 2030 (0,19 % en 2028, 0,09 % en 2029)",
+        "modelled": false,
+        "source": {
+          "label": "Taxe additionnelle à la CVAE : 9,23 % en 2026",
+          "url": "https://www.economie.gouv.fr/node/37027",
+          "date": "2026-01-01"
+        }
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "id": "arthaud",
+      "params": {},
+      "notComputable": {},
+      "measures": [
+        {
+          "theme": "SOCIETES",
+          "text": "Réquisition des profits des secteurs pétrolier et de l'armement",
+          "modelled": false,
+          "source": {
+            "label": "Meeting LO, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-26"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Levée du secret commercial des entreprises",
+          "modelled": false,
+          "source": {
+            "label": "Meeting LO, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "attal",
+      "params": {
+        "csgSalary": {
+          "value": {
+            "rate": 0,
+            "deductible": 0,
+            "crds": 0.005,
+            "base": 0.9825
+          },
+          "source": {
+            "label": "Débat TF1-LCI du 16/11/2026 (Toutsurmesfinances)",
+            "url": "https://www.toutsurmesfinances.com/actualites/?p=2982",
+            "date": "2026-11-16"
+          }
+        }
+      },
+      "notComputable": {},
+      "measures": [
+        {
+          "theme": "REVENU",
+          "text": "Supprimer la CSG sur les salaires (gain annoncé jusqu'à 270 € net par mois) ; calendrier non précisé. L'app la retire des salaires, la CRDS reste",
+          "modelled": true,
+          "source": {
+            "label": "Débat TF1-LCI du 16/11/2026 (Toutsurmesfinances)",
+            "url": "https://www.toutsurmesfinances.com/actualites/?p=2982",
+            "date": "2026-11-16"
+          }
+        },
+        {
+          "theme": "REVENU",
+          "text": "Baisse des cotisations salariales, non chiffrée ; aucune hausse d'impôts",
+          "modelled": false,
+          "source": {
+            "label": "Acteurs publics ; programme « travail et salaires », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-07-03"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Pas de hausse de la fiscalité de l'assurance-vie ni des successions ; donations facilitées aux petits-enfants",
+          "modelled": false,
+          "source": {
+            "label": "Assises AFER, meeting de Lyon, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-10"
+          }
+        }
+      ]
+    },
+    {
+      "id": "glucksmann",
+      "params": {
+        "topFortunes": {
+          "value": [
+            {
+              "threshold": 100000000.0,
+              "rate": 0.05
+            }
+          ],
+          "source": {
+            "label": "AFP via Public Sénat, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-11-09"
+          }
+        }
+      },
+      "notComputable": {
+        "SALAIRE": "Baisse de la CSG sur les salaires annoncée sans taux",
+        "SUCCESSION": "Taxation des très grands héritages non chiffrée"
+      },
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Contribution exceptionnelle de 5 % sur les patrimoines de plus de 100 M€",
+          "modelled": true,
+          "source": {
+            "label": "AFP via Public Sénat, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-11-09"
+          }
+        },
+        {
+          "theme": "REVENU",
+          "text": "Baisse de la CSG sur les salaires pour rapprocher le net du brut",
+          "modelled": false,
+          "source": {
+            "label": "LCP, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-09"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Taxation des hauts patrimoines et des très grands héritages",
+          "modelled": false,
+          "source": {
+            "label": "Sud Radio, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-04"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Taxation des superprofits, taxe européenne sur les superprofits pétroliers et gaziers",
+          "modelled": false,
+          "source": {
+            "label": "AFP via Public Sénat, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-11-09"
+          }
+        },
+        {
+          "theme": "CONSOMMATION",
+          "text": "Fin de l'exonération du kérosène sur les vols intérieurs ; hausse de la taxe sur les billets d'avion ; jets privés et yachts ciblés",
+          "modelled": false,
+          "source": {
+            "label": "AFP via Public Sénat, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-11-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "le-pen",
+      "params": {
+        "irExemptUnderAge": {
+          "value": {
+            "age": 30
+          },
+          "source": {
+            "label": "Livret « La France entreprend », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        "qfFullShareSecondChild": {
+          "value": true,
+          "source": {
+            "label": "Part fiscale pleine dès le deuxième enfant (contre-budget ; Europe 1, 25/10/2026), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-25"
+          }
+        },
+        "youngFounderExemptionYears": {
+          "value": 5,
+          "source": {
+            "label": "Livret « La France entreprend », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        }
+      },
+      "notComputable": {
+        "PATRIMOINE": "IFI remplacé par un impôt sur la fortune financière sans barème publié",
+        "PRODUCTION": "Baisse de 16,2 Md€ répartie entre CFE, CVAE et C3S, sans taux par impôt"
+      },
+      "measures": [
+        {
+          "theme": "REVENU",
+          "text": "Exonération d'impôt sur le revenu pour les moins de 30 ans (l'app l'applique au salaire du déclarant)",
+          "modelled": true,
+          "source": {
+            "label": "Livret « La France entreprend », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "REVENU",
+          "text": "Part fiscale pleine dès le deuxième enfant ; barème de l'impôt et CSG indexés sur l'inflation",
+          "modelled": true,
+          "source": {
+            "label": "Contre-budget RN 2026, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Impôt sur la fortune financière remplaçant l'IFI (résidence principale, biens professionnels exclus)",
+          "modelled": false,
+          "source": {
+            "label": "Contre-budget RN 2026, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Transmission d'entreprise exonérée contre une détention de 10 ans",
+          "modelled": false,
+          "source": {
+            "label": "Livret « La France entreprend », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Exonération d'IS pendant cinq ans pour les entreprises créées par un moins de 30 ans",
+          "modelled": true,
+          "source": {
+            "label": "Livret « La France entreprend », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "PRODUCTION",
+          "text": "Baisse des impôts de production de 16,2 Md€ (CFE 8,8 ; CVAE 2,6 ; C3S 4,8)",
+          "modelled": false,
+          "source": {
+            "label": "Contre-budget RN 2026, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Taxation à 33 % des profits exceptionnels en période de crise ; taxe sur les rachats d'actions",
+          "modelled": false,
+          "source": {
+            "label": "Livret « La France entreprend », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lisnard",
+      "params": {
+        "qfCap": {
+          "value": {
+            "cap": null
+          },
+          "source": {
+            "label": "Programme « L'ambition française », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        "corporateTax": {
+          "value": {
+            "rate": 0.2,
+            "reducedRate": 0.15,
+            "reducedCeiling": 42500,
+            "reducedMaxTurnover": 10000000
+          },
+          "source": {
+            "label": "Programme de David Lisnard (L'Hémicycle)",
+            "url": "https://lhemicycle.com/candidat/david-lisnard/",
+            "date": "2026-11-21"
+          }
+        },
+        "c3s": {
+          "value": null,
+          "source": {
+            "label": "Meeting de Paris, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-01-21"
+          }
+        },
+        "cvae": {
+          "value": null,
+          "source": {
+            "label": "Programme de David Lisnard (L'Hémicycle)",
+            "url": "https://lhemicycle.com/candidat/david-lisnard/",
+            "date": "2026-11-21"
+          }
+        }
+      },
+      "notComputable": {
+        "SALAIRE": "Alignement de la CSG des actifs sur celle des retraités sans taux arrêté"
+      },
+      "measures": [
+        {
+          "theme": "REVENU",
+          "text": "Déplafonnement du quotient familial",
+          "modelled": true,
+          "source": {
+            "label": "Programme « L'ambition française », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "REVENU",
+          "text": "Baisser la CSG des actifs au niveau de celle des retraités (taux cités : 9,2 % et 6,6 %)",
+          "modelled": false,
+          "source": {
+            "label": "Discours de La Gagne, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-08"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Impôt sur les sociétés à 20 %",
+          "modelled": true,
+          "source": {
+            "label": "Programme de David Lisnard (L'Hémicycle)",
+            "url": "https://lhemicycle.com/candidat/david-lisnard/",
+            "date": "2026-11-21"
+          }
+        },
+        {
+          "theme": "PRODUCTION",
+          "text": "Impôts de production divisés par deux ; suppression de la C3S et de la CVAE (« le cas échéant » pour la CVAE en janvier)",
+          "modelled": true,
+          "source": {
+            "label": "Meeting de Paris, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-01-21"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Transmission des entreprises libérée des droits de succession",
+          "modelled": false,
+          "source": {
+            "label": "Benfeld, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "melenchon",
+      "params": {},
+      "notComputable": {
+        "SALAIRE": "CSG progressive à 14 tranches sans barème publié",
+        "IMPOT_REVENU": "Barème à 14 tranches annoncé sans seuils ni taux publiés",
+        "PATRIMOINE": "ISF rétabli sans barème publié",
+        "SUCCESSION": "Hausse des droits sur les plus hauts patrimoines sans barème publié",
+        "IMPOT_SOCIETES": "IS progressif sans taux publiés",
+        "PRODUCTION": "CVAE rétablie pour les plus grandes entreprises sans taux"
+      },
+      "measures": [
+        {
+          "theme": "REVENU",
+          "text": "Impôt sur le revenu à 14 tranches ; CSG progressive ; fin du quotient conjugal, crédit d'impôt par enfant ; fin de la flat tax",
+          "modelled": false,
+          "source": {
+            "label": "Budget LFI du 14/10/2026 et « L'Avenir en commun », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-14"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "ISF rétabli avec un volet climatique ; taxe de 2 % sur les patrimoines de plus de 100 M€ ; taxe foncière progressive",
+          "modelled": false,
+          "source": {
+            "label": "Budget LFI du 14/10/2026 et « L'Avenir en commun », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-14"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Héritage maximal de 12 M€ ; droits relevés sur les plus hauts patrimoines ; cinq logements transmissibles au plus",
+          "modelled": false,
+          "source": {
+            "label": "Budget LFI du 14/10/2026 et « L'Avenir en commun », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-14"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "IS progressif selon les bénéfices et leur usage ; taxe sur les superprofits ; taxe sur les multinationales ; fin des exonérations de cotisations au-dessus de 2 Smic",
+          "modelled": false,
+          "source": {
+            "label": "Budget LFI du 14/10/2026 et « L'Avenir en commun », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-14"
+          }
+        },
+        {
+          "theme": "CONSOMMATION",
+          "text": "TVA réduite sur les produits de première nécessité, « TVA grand luxe »",
+          "modelled": false,
+          "source": {
+            "label": "Budget LFI du 14/10/2026 et « L'Avenir en commun », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-14"
+          }
+        }
+      ]
+    },
+    {
+      "id": "philippe",
+      "params": {
+        "youngChildReduction": {
+          "value": 3000,
+          "source": {
+            "label": "Programme « Pour une France plus attentive à ses enfants » ; Public Sénat, 18/11/2026, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-11-18"
+          }
+        }
+      },
+      "notComputable": {
+        "PRODUCTION": "Baisse de 50 Md€ par an des impôts de production sans répartition par impôt"
+      },
+      "measures": [
+        {
+          "theme": "REVENU",
+          "text": "Pas d'impôt sur le revenu pendant les trois premières années d'un enfant pour les classes moyennes (4e au 7e décile), réduction de 3 000 €/an au-delà. L'app retient une réduction plafonnée à 3 000 €",
+          "modelled": true,
+          "source": {
+            "label": "Public Sénat, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-11-18"
+          }
+        },
+        {
+          "theme": "REVENU",
+          "text": "Aucun nouvel impôt ni nouvelle norme pendant le quinquennat",
+          "modelled": false,
+          "source": {
+            "label": "« Pour une France plus prospère », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "PRODUCTION",
+          "text": "Impôts de production baissés de 50 Md€ par an, compensés par 50 Md€ d'aides en moins",
+          "modelled": false,
+          "source": {
+            "label": "Public Sénat, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-11-18"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Pacte Dutreil maintenu ; plafonds de donation relevés les trois premières années",
+          "modelled": false,
+          "source": {
+            "label": "Programme Horizons, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "retailleau",
+      "params": {
+        "c3s": {
+          "value": null,
+          "source": {
+            "label": "Projet industrie et entreprises (LR), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-19"
+          }
+        },
+        "cvae": {
+          "value": null,
+          "source": {
+            "label": "Projet industrie et entreprises (LR), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-19"
+          }
+        },
+        "cfeIndustrialExempt": {
+          "value": true,
+          "source": {
+            "label": "Projet industrie et entreprises (LR), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-19"
+          }
+        }
+      },
+      "notComputable": {
+        "IMPOT_REVENU": "Baisse de 21 Md€ des impôts des ménages sans détail"
+      },
+      "measures": [
+        {
+          "theme": "PRODUCTION",
+          "text": "Suppression de la C3S et de la CVAE, exonération de la part industrielle de la CFE",
+          "modelled": true,
+          "source": {
+            "label": "Projet industrie et entreprises (LR), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-19"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Baisse de 30 Md€ des impôts des entreprises, dont plus de 25 Md€ sur le coût du travail",
+          "modelled": false,
+          "source": {
+            "label": "Public Sénat, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-12"
+          }
+        },
+        {
+          "theme": "REVENU",
+          "text": "Baisse de 21 Md€ des impôts des ménages",
+          "modelled": false,
+          "source": {
+            "label": "Public Sénat, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-12"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Dons familiaux exonérés jusqu'à 150 000 € pour les moins de 30 ans pendant trois ans",
+          "modelled": false,
+          "source": {
+            "label": "Projet logement, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "roussel",
+      "params": {
+        "inheritance": {
+          "value": {
+            "childAllowance": 100000,
+            "brackets": [
+              {
+                "upTo": 8072,
+                "rate": 0.05
+              },
+              {
+                "upTo": 12109,
+                "rate": 0.1
+              },
+              {
+                "upTo": 15932,
+                "rate": 0.15
+              },
+              {
+                "upTo": 552324,
+                "rate": 0.2
+              },
+              {
+                "upTo": 902838,
+                "rate": 0.3
+              },
+              {
+                "upTo": 1805677,
+                "rate": 0.4
+              },
+              {
+                "rate": 0.45
+              }
+            ],
+            "exemptBelow": 200000
+          },
+          "source": {
+            "label": "Fête de l'Humanité, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-15"
+          }
+        }
+      },
+      "notComputable": {
+        "PATRIMOINE": "ISF rétabli sans barème publié"
+      },
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Héritages de moins de 200 000 € exonérés",
+          "modelled": true,
+          "source": {
+            "label": "Fête de l'Humanité, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-15"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Rétablissement de l'ISF",
+          "modelled": false,
+          "source": {
+            "label": "Fête de l'Humanité, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-15"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ruffin",
+      "params": {
+        "topFortunes": {
+          "value": [
+            {
+              "threshold": 100000000.0,
+              "rate": 0.02
+            }
+          ],
+          "source": {
+            "label": "Manifeste, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-04-10"
+          }
+        },
+        "dividendTax": {
+          "value": [
+            {
+              "threshold": 0,
+              "rate": 0.02
+            },
+            {
+              "threshold": 10000000.0,
+              "rate": 0.04
+            }
+          ],
+          "source": {
+            "label": "« Pour un travaillisme écologique », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-09"
+          }
+        }
+      },
+      "notComputable": {},
+      "measures": [
+        {
+          "theme": "REVENU",
+          "text": "Candidature retirée le 21/11/2026 ; propositions conservées pour mémoire",
+          "modelled": false,
+          "source": {
+            "label": "LCP (AFP), 21/11/2026",
+            "url": "https://lcp.fr/actualites/francois-ruffin-se-retire-de-la-presidentielle-2027-sans-soutenir-aucun-des-candidats-de",
+            "date": "2026-11-21"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Soutien à la taxe Zucman de 2 % sur les patrimoines de plus de 100 M€",
+          "modelled": true,
+          "source": {
+            "label": "Manifeste, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-04-10"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Taxe sur les dividendes soumise à référendum : 4 % au-delà de 10 M€ versés, 2 % en dessous",
+          "modelled": true,
+          "source": {
+            "label": "« Pour un travaillisme écologique », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-09"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Fin de l'abattement pour durée de détention sur les plus-values immobilières ; meublés touristiques imposés de 40 à 70 %",
+          "modelled": false,
+          "source": {
+            "label": "Cahier logement, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-24"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tondelier",
+      "params": {
+        "topFortunes": {
+          "value": [
+            {
+              "threshold": 100000000.0,
+              "rate": 0.02
+            }
+          ],
+          "source": {
+            "label": "« Pour une prospérité écologique », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-07-13"
+          }
+        }
+      },
+      "notComputable": {
+        "PATRIMOINE": "ISF climatique sans barème publié",
+        "SUCCESSION": "Deux tranches ajoutées au-delà de 4 M€ et 13 M€ sans taux publiés"
+      },
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Taxe Zucman de 2 % au-delà de 100 M€ ; ISF climatique ; barème des successions unifié, plafonnement du pacte Dutreil",
+          "modelled": false,
+          "source": {
+            "label": "« Pour une prospérité écologique », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-07-13"
+          }
+        },
+        {
+          "theme": "CONSOMMATION",
+          "text": "TVA « verte » modulée selon l'impact environnemental ; TVA réduite sur l'abonnement électrique",
+          "modelled": false,
+          "source": {
+            "label": "« Pour une prospérité écologique », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-07-13"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zemmour",
+      "params": {
+        "inheritance": {
+          "value": {
+            "abolished": true,
+            "childAllowance": 100000,
+            "brackets": [
+              {
+                "upTo": 8072,
+                "rate": 0.05
+              },
+              {
+                "upTo": 12109,
+                "rate": 0.1
+              },
+              {
+                "upTo": 15932,
+                "rate": 0.15
+              },
+              {
+                "upTo": 552324,
+                "rate": 0.2
+              },
+              {
+                "upTo": 902838,
+                "rate": 0.3
+              },
+              {
+                "upTo": 1805677,
+                "rate": 0.4
+              },
+              {
+                "rate": 0.45
+              }
+            ]
+          },
+          "source": {
+            "label": "Entretien TV Agri, rapporté par Agra, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-07"
+          }
+        }
+      },
+      "notComputable": {},
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Suppression des droits de succession, notamment pour la transmission des fermes",
+          "modelled": true,
+          "source": {
+            "label": "Entretien TV Agri, rapporté par Agra, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-07"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kazib",
+      "params": {},
+      "notComputable": {},
+      "measures": [
+        {
+          "theme": "SOCIETES",
+          "text": "Suppression des aides publiques aux grandes entreprises",
+          "modelled": false,
+          "source": {
+            "label": "anasse2027.fr, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dupont-aignan",
+      "params": {
+        "wealthTax": {
+          "value": {
+            "totalBase": false,
+            "threshold": 1300000,
+            "brackets": [
+              {
+                "upTo": 800000,
+                "rate": 0
+              },
+              {
+                "upTo": 1300000,
+                "rate": 0.005
+              },
+              {
+                "upTo": 2570000,
+                "rate": 0.007
+              },
+              {
+                "upTo": 5000000,
+                "rate": 0.01
+              },
+              {
+                "upTo": 10000000,
+                "rate": 0.0125
+              },
+              {
+                "rate": 0.015
+              }
+            ],
+            "residenceAllowance": 1.0,
+            "decoteUntil": 1400000,
+            "decoteFlat": 17500,
+            "decoteRate": 0.0125
+          },
+          "source": {
+            "label": "Programme, page logement, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-30"
+          }
+        },
+        "inheritance": {
+          "value": {
+            "childAllowance": 100000,
+            "brackets": [
+              {
+                "upTo": 8072,
+                "rate": 0.05
+              },
+              {
+                "upTo": 12109,
+                "rate": 0.1
+              },
+              {
+                "upTo": 15932,
+                "rate": 0.15
+              },
+              {
+                "upTo": 552324,
+                "rate": 0.2
+              },
+              {
+                "upTo": 902838,
+                "rate": 0.3
+              },
+              {
+                "upTo": 1805677,
+                "rate": 0.4
+              },
+              {
+                "rate": 0.45
+              }
+            ],
+            "residenceExcluded": true
+          },
+          "source": {
+            "label": "Programme, page logement, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-30"
+          }
+        },
+        "reinvestedCoefficient": {
+          "value": 0.5,
+          "source": {
+            "label": "Projet économie et travail, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-10"
+          }
+        }
+      },
+      "notComputable": {},
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Résidence principale exclue de l'IFI et des droits de succession",
+          "modelled": true,
+          "source": {
+            "label": "Programme, page logement, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-30"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Impôt sur les très grandes fortunes, hors résidence principale, sans taux publié ; donations exonérées relevées de 100 000 €",
+          "modelled": false,
+          "source": {
+            "label": "Projet économie et travail, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-10"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Impôt sur les sociétés divisé par deux sur les bénéfices réinvestis",
+          "modelled": true,
+          "source": {
+            "label": "Projet économie et travail, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-10"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Multinationales imposées au prorata de leur chiffre d'affaires en France ; taxe sur les données personnelles",
+          "modelled": false,
+          "source": {
+            "label": "Projet économie et travail, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-10"
+          }
+        },
+        {
+          "theme": "CONSOMMATION",
+          "text": "TVA supprimée sur 50 produits",
+          "modelled": false,
+          "source": {
+            "label": "Projet économie et travail, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-10"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bertrand",
+      "params": {},
+      "notComputable": {},
+      "measures": [
+        {
+          "theme": "CONSOMMATION",
+          "text": "Pas de taxation des voitures électriques",
+          "modelled": false,
+          "source": {
+            "label": "L'Opinion, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-08-19"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cazeneuve",
+      "params": {},
+      "notComputable": {
+        "PATRIMOINE": "Contribution des très grandes fortunes non chiffrée",
+        "PRODUCTION": "Baisse des impôts de production non chiffrée"
+      },
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Contribution des très grandes fortunes et des hauts revenus du capital ; critique de la flat tax",
+          "modelled": false,
+          "source": {
+            "label": "« Lettre aux Français », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-07-15"
+          }
+        },
+        {
+          "theme": "PRODUCTION",
+          "text": "Baisse des impôts de production",
+          "modelled": false,
+          "source": {
+            "label": "« Lettre aux Français », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-07-15"
+          }
+        }
+      ]
+    },
+    {
+      "id": "philippot",
+      "params": {},
+      "notComputable": {
+        "SUCCESSION": "Baisse des droits sur les petits héritages sans seuil"
+      },
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Moindre taxation des petits héritages",
+          "modelled": false,
+          "source": {
+            "label": "Projet pour la France 2026-2027, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-15"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Allègement fiscal pour les indépendants et les TPE, non chiffré",
+          "modelled": false,
+          "source": {
+            "label": "Projet pour la France 2026-2027, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-15"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bouamrane",
+      "params": {},
+      "notComputable": {},
+      "measures": [
+        {
+          "theme": "SOCIETES",
+          "text": "Aides aux entreprises conditionnées au paiement de leurs impôts en France",
+          "modelled": false,
+          "source": {
+            "label": "Oumma, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-07-02"
+          }
+        }
+      ]
+    },
+    {
+      "id": "labib",
+      "params": {},
+      "notComputable": {
+        "PATRIMOINE": "Prélèvements sur les milliardaires non chiffrés"
+      },
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Mesures sociales financées par des prélèvements sur actionnaires et milliardaires",
+          "modelled": false,
+          "source": {
+            "label": "Fête de l'Humanité, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-12"
+          }
+        }
+      ]
+    },
+    {
+      "id": "asselineau",
+      "params": {},
+      "notComputable": {},
+      "measures": []
+    },
+    {
+      "id": "branco",
+      "params": {
+        "newCompanyMoratoriumYears": {
+          "value": 3,
+          "source": {
+            "label": "« Le Projet 2027 » (Les Ruches), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        }
+      },
+      "notComputable": {
+        "PATRIMOINE": "ISF rétabli sans barème publié",
+        "SUCCESSION": "Seuils annoncés sans barème des droits"
+      },
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Droits de mutation supprimés pour 90 % des foyers ; taxation « confiscatoire » au-delà de 100 M€ (10 M€ hors ligne directe) ; ISF rétabli",
+          "modelled": false,
+          "source": {
+            "label": "« Le Projet 2027 » (Les Ruches), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "SOCIETES",
+          "text": "Moratoire fiscal de trois ans pour les nouvelles entreprises ; suppression de 267 petites taxes",
+          "modelled": true,
+          "source": {
+            "label": "« Le Projet 2027 » (Les Ruches), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "CONSOMMATION",
+          "text": "TVA relevée de 10 points sur le luxe et les aliments ultra-transformés ; TVA sociale sur les biens non essentiels",
+          "modelled": false,
+          "source": {
+            "label": "« Le Projet 2027 » (Les Ruches), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "batho",
+      "params": {},
+      "notComputable": {},
+      "measures": []
+    },
+    {
+      "id": "becht",
+      "params": {},
+      "notComputable": {},
+      "measures": []
+    },
+    {
+      "id": "dubuisson",
+      "params": {},
+      "notComputable": {},
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Opposé à une taxe de 2 % sur les patrimoines de plus de 100 M€",
+          "modelled": false,
+          "source": {
+            "label": "dubuisson2027.fr, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-10-19"
+          }
+        }
+      ]
+    },
+    {
+      "id": "durif",
+      "params": {},
+      "notComputable": {
+        "SALAIRE": "Suppression de la fiscalité annoncée sans détail",
+        "IMPOT_REVENU": "Suppression de la fiscalité annoncée sans détail",
+        "PATRIMOINE": "Suppression de la fiscalité annoncée sans détail",
+        "SUCCESSION": "Suppression de la fiscalité annoncée sans détail",
+        "IMPOT_SOCIETES": "Suppression de la fiscalité annoncée sans détail",
+        "PRODUCTION": "Suppression de la fiscalité annoncée sans détail"
+      },
+      "measures": [
+        {
+          "theme": "REVENU",
+          "text": "« Fiscalité supprimée », sans impôts précisés ni remplacement",
+          "modelled": false,
+          "source": {
+            "label": "Programme « Zéro Défaut », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-15"
+          }
+        }
+      ]
+    },
+    {
+      "id": "egger",
+      "params": {},
+      "notComputable": {},
+      "measures": []
+    },
+    {
+      "id": "lalanne",
+      "params": {},
+      "notComputable": {},
+      "measures": []
+    },
+    {
+      "id": "markovic",
+      "params": {},
+      "notComputable": {},
+      "measures": []
+    },
+    {
+      "id": "mathieu",
+      "params": {},
+      "notComputable": {},
+      "measures": []
+    },
+    {
+      "id": "platret",
+      "params": {},
+      "notComputable": {},
+      "measures": []
+    },
+    {
+      "id": "polony",
+      "params": {},
+      "notComputable": {},
+      "measures": [
+        {
+          "theme": "SOCIETES",
+          "text": "Taxe sur les superprofits des groupes pétroliers, sans mécanisme détaillé",
+          "modelled": false,
+          "source": {
+            "label": "Sud Radio, recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-09-15"
+          }
+        }
+      ]
+    },
+    {
+      "id": "riner",
+      "params": {},
+      "notComputable": {},
+      "measures": []
+    },
+    {
+      "id": "rohou",
+      "params": {},
+      "notComputable": {},
+      "measures": []
+    },
+    {
+      "id": "villepin",
+      "params": {
+        "inheritance": {
+          "value": {
+            "childAllowance": 100000,
+            "brackets": [
+              {
+                "upTo": 8072,
+                "rate": 0.05
+              },
+              {
+                "upTo": 12109,
+                "rate": 0.1
+              },
+              {
+                "upTo": 15932,
+                "rate": 0.15
+              },
+              {
+                "upTo": 552324,
+                "rate": 0.2
+              },
+              {
+                "upTo": 902838,
+                "rate": 0.3
+              },
+              {
+                "upTo": 1805677,
+                "rate": 0.4
+              },
+              {
+                "rate": 0.45
+              }
+            ],
+            "exemptBelow": 1000000
+          },
+          "source": {
+            "label": "« Big Bang : la règle républicaine » (La France humaniste), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-08-28"
+          }
+        },
+        "cvae": {
+          "value": null,
+          "source": {
+            "label": "La France humaniste, « 20 propositions », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        "c3s": {
+          "value": null,
+          "source": {
+            "label": "La France humaniste, « 20 propositions », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        "cfeCoefficient": {
+          "value": 0,
+          "source": {
+            "label": "La France humaniste, « 20 propositions », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        }
+      },
+      "notComputable": {
+        "PATRIMOINE": "Impôt unique sur la fortune dès 2,2 M€, fortement progressif, sans barème publié"
+      },
+      "measures": [
+        {
+          "theme": "PATRIMOINE",
+          "text": "Pas de droits de succession sous 1 M€ ; au-delà, droits plus lourds sans barème publié (l'app applique le barème actuel au-delà)",
+          "modelled": true,
+          "source": {
+            "label": "« Big Bang : la règle républicaine » (La France humaniste), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-08-28"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Impôt unique sur la fortune, toutes sources de patrimoine, à partir de 2,2 M€, ciblant le 1 % le plus riche",
+          "modelled": false,
+          "source": {
+            "label": "« Big Bang : la règle républicaine » (La France humaniste), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-08-28"
+          }
+        },
+        {
+          "theme": "REVENU",
+          "text": "Suppression d'environ 400 niches fiscales et sociales ; neuf grands impôts et un code fiscal de 40 pages",
+          "modelled": false,
+          "source": {
+            "label": "« Big Bang : la règle républicaine » (La France humaniste), recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis",
+            "date": "2026-08-28"
+          }
+        },
+        {
+          "theme": "PRODUCTION",
+          "text": "Suppression des impôts de production (l'app retire CVAE, C3S et CFE)",
+          "modelled": true,
+          "source": {
+            "label": "La France humaniste, « 20 propositions », recensé par PresiTracker2027",
+            "url": "https://presitracker2027.fr/themes/fis"
+          }
+        }
+      ]
+    }
+  ]
+}
