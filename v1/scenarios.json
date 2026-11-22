@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "publishedAt": "2026-11-20",
+  "publishedAt": "2026-11-22",
   "constants": {
     "pass": 48060,
     "pointPurchase": 20.1877,
@@ -1472,7 +1472,8 @@
       "label": "François Ruffin",
       "sortName": "Ruffin",
       "party": "Debout !",
-      "updatedAt": "2026-11-18",
+      "subtitle": "Candidature retirée le 21/11/2026",
+      "updatedAt": "2026-11-22",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -1516,6 +1517,15 @@
         }
       },
       "measures": [
+        {
+          "text": "Candidature retirée le 21/11/2026 (communiqué), sans soutien à un autre candidat ; propositions conservées pour mémoire",
+          "modelled": false,
+          "source": {
+            "label": "LCP (AFP), 21/11/2026",
+            "url": "https://lcp.fr/actualites/francois-ruffin-se-retire-de-la-presidentielle-2027-sans-soutenir-aucun-des-candidats-de",
+            "date": "2026-11-21"
+          }
+        },
         {
           "text": "Retraite à 60 ans avec 40 annuités",
           "modelled": true,
