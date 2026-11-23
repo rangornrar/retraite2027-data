@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "publishedAt": "2026-11-22",
+  "publishedAt": "2026-11-23",
   "cotisations": {
     "pass": 48060,
     "oldAgeCapped": 0.069,
@@ -357,10 +357,11 @@
       "params": {
         "csgSalary": {
           "value": {
-            "rate": 0,
-            "deductible": 0,
+            "rate": 0.092,
+            "deductible": 0.068,
             "crds": 0.005,
-            "base": 0.9825
+            "base": 0.9825,
+            "exemptUpTo": 35845
           },
           "source": {
             "label": "Débat TF1-LCI du 16/11/2026 (Toutsurmesfinances)",
@@ -373,12 +374,22 @@
       "measures": [
         {
           "theme": "REVENU",
-          "text": "Supprimer la CSG sur les salaires (gain annoncé jusqu'à 270 € net par mois) ; calendrier non précisé. L'app la retire des salaires, la CRDS reste",
+          "text": "Supprimer la ligne CSG de la fiche de paie, pour un gain annoncé « jusqu'à 270 € net par mois » ; modalités et calendrier non précisés. L'app supprime la CSG jusqu'à ce gain (première tranche de 35 845 € brut par an, environ 1,6 Smic) ; au-dessus, elle reste due. La CRDS reste. Sans CSG déductible, le revenu imposable augmente un peu",
           "modelled": true,
           "source": {
             "label": "Débat TF1-LCI du 16/11/2026 (Toutsurmesfinances)",
             "url": "https://www.toutsurmesfinances.com/actualites/?p=2982",
             "date": "2026-11-16"
+          }
+        },
+        {
+          "theme": "REVENU",
+          "text": "Les 270 € ne sont pas une somme versée à chaque salarié : le gain dépend du salaire et des modalités de la réforme",
+          "modelled": false,
+          "source": {
+            "label": "Economie Matin, « ce que recouvrent les 270 euros », 17/11/2026",
+            "url": "https://www.economiematin.fr/?p=242146",
+            "date": "2026-11-17"
           }
         },
         {

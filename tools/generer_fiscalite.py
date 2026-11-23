@@ -1,6 +1,6 @@
 """Génère v1/fiscalite.json : loi actuelle 2026 + mesures fiscales des candidats de scenarios.json (22/11/2026)."""
 import json, sys
-MAJ = "2026-11-22"
+MAJ = "2026-11-23"
 PT = "https://presitracker2027.fr/themes/fis"
 def src(label, url=None, date=None):
     d = {"label": label}
@@ -71,8 +71,14 @@ cand("arthaud", mesures=[
     m("SOCIETES", "Réquisition des profits des secteurs pétrolier et de l'armement", False, pt("Meeting LO", "2026-09-26")),
     m("SOCIETES", "Levée du secret commercial des entreprises", False, pt("Meeting LO", "2026-09-26"))])
 S_ATTAL = src("Débat TF1-LCI du 16/11/2026 (Toutsurmesfinances)", "https://www.toutsurmesfinances.com/actualites/?p=2982", "2026-11-16")
-cand("attal", {"csgSalary": v({"rate": 0, "deductible": 0, "crds": .005, "base": .9825}, S_ATTAL)}, mesures=[
-    m("REVENU", "Supprimer la CSG sur les salaires (gain annoncé jusqu'à 270 € net par mois) ; calendrier non précisé. L'app la retire des salaires, la CRDS reste", True, S_ATTAL),
+S_ATTAL_EM = src("Economie Matin, « ce que recouvrent les 270 euros », 17/11/2026", "https://www.economiematin.fr/?p=242146", "2026-11-17")
+# Gain annoncé « jusqu'à 270 € net par mois » : CSG supprimée sur la tranche de salaire qui donne ce gain,
+# soit 270 × 12 / (9,2 % × 98,25 %) = 35 845 € brut par an.
+cand("attal", {"csgSalary": v({"rate": .092, "deductible": .068, "crds": .005, "base": .9825, "exemptUpTo": 35845}, S_ATTAL)}, mesures=[
+    m("REVENU", "Supprimer la ligne CSG de la fiche de paie, pour un gain annoncé « jusqu'à 270 € net par mois » ; modalités et calendrier non précisés. "
+      "L'app supprime la CSG jusqu'à ce gain (première tranche de 35 845 € brut par an, environ 1,6 Smic) ; au-dessus, elle reste due. La CRDS reste. "
+      "Sans CSG déductible, le revenu imposable augmente un peu", True, S_ATTAL),
+    m("REVENU", "Les 270 € ne sont pas une somme versée à chaque salarié : le gain dépend du salaire et des modalités de la réforme", False, S_ATTAL_EM),
     m("REVENU", "Baisse des cotisations salariales, non chiffrée ; aucune hausse d'impôts", False, pt("Acteurs publics ; programme « travail et salaires »", "2026-07-03")),
     m("PATRIMOINE", "Pas de hausse de la fiscalité de l'assurance-vie ni des successions ; donations facilitées aux petits-enfants", False, pt("Assises AFER, meeting de Lyon", "2026-10-10"))])
 cand("asselineau")
