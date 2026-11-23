@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "publishedAt": "2026-11-22",
+  "publishedAt": "2026-11-23",
   "constants": {
     "pass": 48060,
     "pointPurchase": 20.1877,
@@ -2758,7 +2758,7 @@
       "label": "Teddy Riner",
       "sortName": "Riner",
       "party": "Sans étiquette",
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-23",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -2793,17 +2793,17 @@
       },
       "measures": [
         {
-          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "text": "Candidature déclarée le 09/11/2026 ; juge une réforme des retraites « incontournable », veut conserver le système par répartition sans exclure « une part de capitalisation » (aucun chiffre : âge, durée, décote ou minimum non précisés)",
           "modelled": false,
           "source": {
-            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
-            "url": "https://candidats2027.org/",
-            "date": "2026-11-15"
+            "label": "LCP, 10/11/2026",
+            "url": "https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935",
+            "date": "2026-11-10"
           }
         }
       ],
       "computable": false,
-      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+      "notComputableReason": "Aucun paramètre de retraite chiffré à la date de vérification."
     },
     {
       "id": "rohou",
