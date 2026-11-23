@@ -1,6 +1,6 @@
-# Retraite 2027 — données des programmes
+# Compare 2027 — données des programmes
 
-Fichiers publics lus par l'application Retraite 2027 :
+Fichiers publics lus par l'application Compare 2027 (anciennement Retraite 2027) :
 
 - `https://rangornrar.github.io/retraite2027-data/v1/scenarios.json` : retraites (loi actuelle, réforme 2023, candidats) ;
 - `https://rangornrar.github.io/retraite2027-data/v1/fiscalite.json` : impôts des particuliers et des entreprises
