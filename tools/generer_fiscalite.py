@@ -1,6 +1,6 @@
 """Génère v1/fiscalite.json : loi actuelle 2026 + mesures fiscales des candidats de scenarios.json (22/11/2026)."""
 import json, sys
-MAJ = "2026-11-23"
+MAJ = "2026-11-28"
 PT = "https://presitracker2027.fr/themes/fis"
 def src(label, url=None, date=None):
     d = {"label": label}
@@ -74,13 +74,16 @@ S_ATTAL = src("Débat TF1-LCI du 16/11/2026 (Toutsurmesfinances)", "https://www.
 S_ATTAL_EM = src("Economie Matin, « ce que recouvrent les 270 euros », 17/11/2026", "https://www.economiematin.fr/?p=242146", "2026-11-17")
 # Gain annoncé « jusqu'à 270 € net par mois » : CSG supprimée sur la tranche de salaire qui donne ce gain,
 # soit 270 × 12 / (9,2 % × 98,25 %) = 35 845 € brut par an.
-cand("attal", {"csgSalary": v({"rate": .092, "deductible": .068, "crds": .005, "base": .9825, "exemptUpTo": 35845}, S_ATTAL)}, mesures=[
+S_ATTAL_FIS = src("Site de campagne, « Une loi de stabilité fiscale » (annonce à la REF, 27/08/2026)", "https://attalpresident.fr/programme/mesures/loi-de-stabilite-fiscale", "2026-08-27")
+cand("attal", {"csgSalary": v({"rate": .092, "deductible": .068, "crds": .005, "base": .9825, "exemptUpTo": 35845}, S_ATTAL),
+               "cvae": v(None, S_ATTAL_FIS)}, mesures=[
     m("REVENU", "Supprimer la ligne CSG de la fiche de paie, pour un gain annoncé « jusqu'à 270 € net par mois » ; modalités et calendrier non précisés. "
       "L'app supprime la CSG jusqu'à ce gain (première tranche de 35 845 € brut par an, environ 1,6 Smic) ; au-dessus, elle reste due. La CRDS reste. "
       "Sans CSG déductible, le revenu imposable augmente un peu", True, S_ATTAL),
     m("REVENU", "Les 270 € ne sont pas une somme versée à chaque salarié : le gain dépend du salaire et des modalités de la réforme", False, S_ATTAL_EM),
     m("REVENU", "Baisse des cotisations salariales, non chiffrée ; aucune hausse d'impôts", False, pt("Acteurs publics ; programme « travail et salaires »", "2026-07-03")),
-    m("PATRIMOINE", "Pas de hausse de la fiscalité de l'assurance-vie ni des successions ; donations facilitées aux petits-enfants", False, pt("Assises AFER, meeting de Lyon", "2026-10-10"))])
+    m("PATRIMOINE", "Pas de hausse de la fiscalité de l'assurance-vie ni des successions ; donations facilitées aux petits-enfants", False, pt("Assises AFER, meeting de Lyon", "2026-10-10")),
+    m("PRODUCTION", "« Mener enfin à terme la suppression de la CVAE » ; l'impôt sur les sociétés reste à 25 %", True, S_ATTAL_FIS)])
 cand("asselineau")
 cand("batho")
 cand("becht")
@@ -126,6 +129,7 @@ cand("labib", nc={"PATRIMOINE": "Prélèvements sur les milliardaires non chiffr
 cand("lalanne")
 S_LP_L = pt("Livret « La France entreprend »")
 S_LP_B = pt("Contre-budget RN 2026")
+S_LP_LCI = src("Politique Matin, entretien LCI du 25/11/2026", "https://www.politiquematin.fr/marine-le-pen-lci-salaires-cotisations-petits-patrons-25-novembre-2026", "2026-11-25")
 cand("le-pen", {
     "irExemptUnderAge": v({"age": 30}, S_LP_L),
     "qfFullShareSecondChild": v(True, src("Part fiscale pleine dès le deuxième enfant (contre-budget ; Europe 1, 25/10/2026), recensé par PresiTracker2027", PT, "2026-10-25")),
@@ -138,7 +142,9 @@ cand("le-pen", {
     m("PATRIMOINE", "Transmission d'entreprise exonérée contre une détention de 10 ans", False, S_LP_L),
     m("SOCIETES", "Exonération d'IS pendant cinq ans pour les entreprises créées par un moins de 30 ans", True, S_LP_L),
     m("PRODUCTION", "Baisse des impôts de production de 16,2 Md€ (CFE 8,8 ; CVAE 2,6 ; C3S 4,8)", False, S_LP_B),
-    m("SOCIETES", "Taxation à 33 % des profits exceptionnels en période de crise ; taxe sur les rachats d'actions", False, S_LP_L)])
+    m("SOCIETES", "Taxation à 33 % des profits exceptionnels en période de crise ; taxe sur les rachats d'actions", False, S_LP_L),
+    m("CONSOMMATION", "TVA ramenée de 20 % à 5,5 % sur l'électricité, le gaz, le fioul et les carburants ; TVA à 0 % sur cent produits de première nécessité", False, S_LP_LCI),
+    m("PRODUCTION", "Supprimer la cotisation foncière des entreprises (gain estimé à 3 Md€ pour les petites entreprises) ; périmètre exact non précisé, l'app ne la modélise pas encore", False, S_LP_LCI)])
 S_LIS = src("Programme de David Lisnard (L'Hémicycle)", "https://lhemicycle.com/candidat/david-lisnard/", "2026-11-21")
 S_LIS_M = pt("Meeting de Paris", "2026-01-21")
 cand("lisnard", {
@@ -172,7 +178,9 @@ cand("philippe", {"youngChildReduction": v(3000, src("Programme « Pour une Fran
       pt("Public Sénat", "2026-11-18")),
     m("REVENU", "Aucun nouvel impôt ni nouvelle norme pendant le quinquennat", False, pt("« Pour une France plus prospère »")),
     m("PRODUCTION", "Impôts de production baissés de 50 Md€ par an, compensés par 50 Md€ d'aides en moins", False, pt("Public Sénat", "2026-11-18")),
-    m("PATRIMOINE", "Pacte Dutreil maintenu ; plafonds de donation relevés les trois premières années", False, pt("Programme Horizons"))])
+    m("PATRIMOINE", "Pacte Dutreil maintenu ; plafonds de donation relevés les trois premières années", False, pt("Programme Horizons")),
+    m("PATRIMOINE", "Suppression des droits de mutation (« frais de notaire ») pour le premier achat de résidence principale des moins de 35 ans, sans plafond publié", False,
+      src("Programme d'Édouard Philippe, page logement (mise à jour du 20/11/2026)", "https://www.edouardphilippe.fr/programme", "2026-11-20"))])
 cand("philippot", nc={"SUCCESSION": "Baisse des droits sur les petits héritages sans seuil"}, mesures=[
     m("PATRIMOINE", "Moindre taxation des petits héritages", False, pt("Projet pour la France 2026-2027", "2026-09-15")),
     m("SOCIETES", "Allègement fiscal pour les indépendants et les TPE, non chiffré", False, pt("Projet pour la France 2026-2027", "2026-09-15"))])
@@ -185,7 +193,8 @@ cand("retailleau", {"c3s": v(None, S_RET), "cvae": v(None, S_RET), "cfeIndustria
     m("SOCIETES", "Baisse de 30 Md€ des impôts des entreprises, dont plus de 25 Md€ sur le coût du travail", False, pt("Public Sénat", "2026-10-12")),
     m("REVENU", "Baisse de 21 Md€ des impôts des ménages", False, pt("Public Sénat", "2026-10-12")),
     m("PATRIMOINE", "Dons familiaux exonérés jusqu'à 150 000 € pour les moins de 30 ans pendant trois ans", False, pt("Projet logement"))])
-cand("riner")
+cand("riner", mesures=[m("REVENU", "Augmenter le salaire net par des allègements de charges (réduire l'écart entre brut et net) et alléger les taxes sur les entreprises, sans chiffrage", False,
+                       src("LCP, 10/11/2026", "https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935", "2026-11-10"))])
 cand("rohou")
 S_ROU = pt("Fête de l'Humanité", "2026-09-15")
 cand("roussel", {"inheritance": v({"childAllowance": 100000, "brackets": SUCC, "exemptBelow": 200000}, S_ROU)},
@@ -202,21 +211,34 @@ cand("ruffin", {"topFortunes": v([{"threshold": 1e8, "rate": .02}], pt("Manifest
     m("PATRIMOINE", "Fin de l'abattement pour durée de détention sur les plus-values immobilières ; meublés touristiques imposés de 40 à 70 %", False, pt("Cahier logement", "2026-09-24"))])
 S_TON = pt("« Pour une prospérité écologique »", "2026-07-13")
 cand("tondelier", {"topFortunes": v([{"threshold": 1e8, "rate": .02}], S_TON)},
-     {"PATRIMOINE": "ISF climatique sans barème publié", "SUCCESSION": "Deux tranches ajoutées au-delà de 4 M€ et 13 M€ sans taux publiés"}, [
+     {"PATRIMOINE": "ISF climatique sans barème publié", "SUCCESSION": "Contribution de 10 % au-delà de 4 M€ et 10 % de plus au-delà de 13 M€, sans articulation publiée avec le barème actuel (marginale ou non, par héritier ou non)"}, [
     m("PATRIMOINE", "Taxe Zucman de 2 % au-delà de 100 M€ ; ISF climatique ; barème des successions unifié, plafonnement du pacte Dutreil", False, S_TON),
-    m("CONSOMMATION", "TVA « verte » modulée selon l'impact environnemental ; TVA réduite sur l'abonnement électrique", False, S_TON)])
+    m("CONSOMMATION", "TVA « verte » modulée selon l'impact environnemental ; TVA réduite sur l'abonnement électrique", False, S_TON),
+    m("PATRIMOINE", "Héritages : contribution de 10 % au-delà de 4 M€ et de 10 % supplémentaires au-delà de 13 M€ ; pacte Dutreil ramené de 75 % à 50 % d'exonération ; fin des avantages du démembrement (15 Md€ par an annoncés)", False,
+      src("L'Info Durable, conférence de presse des Écologistes, 27/08/2026", "https://www.linfodurable.fr/politique/les-ecologistes-veulent-taxer-davantage-les-heritages-des-plus-fortunes-58714", "2026-08-27"))])
 S_VIL = pt("« Big Bang : la règle républicaine » (La France humaniste)", "2026-08-28")
 S_VIL_E = pt("La France humaniste, « 20 propositions »")
+S_VIL_SUCC = src("Capital (via Yahoo Finance), « Héritage : zéro impôt jusqu'à 1 million d'euros mais 60 % au-delà de 5 millions », France 2 / franceinfo du 23/11/2026", "https://fr.finance.yahoo.com/actualites/h%C3%A9ritage-z%C3%A9ro-imp%C3%B4t-jusqu%C3%A0-1-225911601.html", "2026-11-23")
 cand("villepin", {
-    "inheritance": v({"childAllowance": 100000, "brackets": SUCC, "exemptBelow": 1000000}, S_VIL),
+    "inheritance": v({"childAllowance": 0, "brackets": T((1000000, 0), (5000000, .50), (None, .60))}, S_VIL_SUCC),
     "cvae": v(None, S_VIL_E), "c3s": v(None, S_VIL_E), "cfeCoefficient": v(0, S_VIL_E)},
-    {"PATRIMOINE": "Impôt unique sur la fortune dès 2,2 M€, fortement progressif, sans barème publié"}, [
-    m("PATRIMOINE", "Pas de droits de succession sous 1 M€ ; au-delà, droits plus lourds sans barème publié (l'app applique le barème actuel au-delà)", True, S_VIL),
-    m("PATRIMOINE", "Impôt unique sur la fortune, toutes sources de patrimoine, à partir de 2,2 M€, ciblant le 1 % le plus riche", False, S_VIL),
+    {"PATRIMOINE": "Impôt unique sur la fortune dès 2,2 M€, barème « proche de celui de 2016 » non publié"}, [
+    m("PATRIMOINE", "Successions en ligne directe en trois tranches : 0 % jusqu'à 1 M€, 50 % de 1 à 5 M€, 60 % au-delà. L'app les applique comme taux marginaux par héritier (non précisé)", True, S_VIL_SUCC),
+    m("PATRIMOINE", "Impôt unique sur la fortune, toutes sources de patrimoine, à partir de 2,2 M€, ciblant le 1 % le plus riche, barème « proche de celui de 2016 », biens professionnels exonérés", False, S_VIL_SUCC),
+    m("REVENU", "Transfert de plus de 200 Md€ de cotisations vers une CSG universelle, pour une hausse moyenne de 200 € nets par mois ; taux de CSG non publié", False,
+      src("Var-Actu, 20/11/2026", "https://www.varactu.fr/dominique-de-villepin-se-lance-dans-la-course-a-lelysee-avec-258-propositions/", "2026-11-20")),
     m("REVENU", "Suppression d'environ 400 niches fiscales et sociales ; neuf grands impôts et un code fiscal de 40 pages", False, S_VIL),
     m("PRODUCTION", "Suppression des impôts de production (l'app retire CVAE, C3S et CFE)", True, S_VIL_E)])
-cand("zemmour", {"inheritance": v({"abolished": True, "childAllowance": 100000, "brackets": SUCC}, pt("Entretien TV Agri, rapporté par Agra", "2026-10-07"))}, mesures=[
-    m("PATRIMOINE", "Suppression des droits de succession, notamment pour la transmission des fermes", True, pt("Entretien TV Agri, rapporté par Agra", "2026-10-07"))])
+S_ZEM = src("« Objectif Élysée 2027 » (CNews/Europe 1), annonces fiscales du 26/11/2026", "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685", "2026-11-26")
+cand("zemmour", {"inheritance": v({"abolished": True, "childAllowance": 100000, "brackets": SUCC}, pt("Entretien TV Agri, rapporté par Agra", "2026-10-07")),
+                 "csgSalary": v({"rate": 0, "deductible": 0, "crds": .005, "base": .9825}, S_ZEM),
+                 "wealthTax": v(None, S_ZEM),
+                 "cvae": v(None, S_ZEM), "c3s": v(None, S_ZEM), "cfeCoefficient": v(0, S_ZEM)}, mesures=[
+    m("PATRIMOINE", "Suppression des droits de succession, notamment pour la transmission des fermes ; le 26/11/2026, suppression annoncée des droits sur les transmissions en ligne directe (8 Md€)", True, pt("Entretien TV Agri, rapporté par Agra", "2026-10-07")),
+    m("REVENU", "Suppression de la CSG sur les revenus d'activité (salariés, indépendants, fonctionnaires), présentée comme une hausse de 10 % des revenus. L'app retire la CSG du salaire et garde la CRDS (non évoquée)", True, S_ZEM),
+    m("PATRIMOINE", "Abrogation de l'impôt sur la fortune immobilière", True, S_ZEM),
+    m("PRODUCTION", "Suppression des impôts de production (16 Md€) ; l'app retire CVAE, C3S et CFE", True, S_ZEM),
+    m("CONSOMMATION", "Taxes sur les carburants baissées d'un tiers, environ 40 centimes par litre (12 Md€ par an)", False, S_ZEM)])
 
 ids_retraite = [s["id"] for s in json.load(open(sys.argv[2], encoding="utf-8"))["scenarios"] if s["type"] == "candidate"]
 manquants = set(ids_retraite) - set(C); en_trop = set(C) - set(ids_retraite)

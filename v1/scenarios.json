@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "publishedAt": "2026-11-23",
+  "publishedAt": "2026-11-28",
   "constants": {
     "pass": 48060,
     "pointPurchase": 20.1877,
@@ -2440,7 +2440,7 @@
       "label": "Clara Egger",
       "sortName": "Egger",
       "party": "Solution démocratique",
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-28",
       "params": {
         "bareme": {
           "status": "unspecified"
@@ -2475,17 +2475,17 @@
       },
       "measures": [
         {
-          "text": "Candidature déclarée ; aucune proposition sur les retraites trouvée au 18/11/2026",
+          "text": "Programme publié le 05/11/2026 : le système de retraite « doit être revu pour devenir durable », réformes soumises à référendum, enquête sur les régimes spéciaux (hauts fonctionnaires, responsables politiques) ; aucun paramètre chiffré (âge, durée, décote ou minimum)",
           "modelled": false,
           "source": {
-            "label": "Liste des candidatures, candidats2027.org (15/11/2026)",
-            "url": "https://candidats2027.org/",
-            "date": "2026-11-15"
+            "label": "Solution démocratique, communiqué de présentation du programme, 05/11/2026",
+            "url": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/",
+            "date": "2026-11-05"
           }
         }
       ],
       "computable": false,
-      "notComputableReason": "Aucune proposition sur les retraites publiée à la date de vérification."
+      "notComputableReason": "Aucun paramètre de retraite chiffré dans le programme publié le 05/11/2026."
     },
     {
       "id": "lalanne",

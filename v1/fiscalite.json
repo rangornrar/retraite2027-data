@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "publishedAt": "2026-11-23",
+  "publishedAt": "2026-11-28",
   "cotisations": {
     "pass": 48060,
     "oldAgeCapped": 0.069,
@@ -368,6 +368,14 @@
             "url": "https://www.toutsurmesfinances.com/actualites/?p=2982",
             "date": "2026-11-16"
           }
+        },
+        "cvae": {
+          "value": null,
+          "source": {
+            "label": "Site de campagne, « Une loi de stabilité fiscale » (annonce à la REF, 27/08/2026)",
+            "url": "https://attalpresident.fr/programme/mesures/loi-de-stabilite-fiscale",
+            "date": "2026-08-27"
+          }
         }
       },
       "notComputable": {},
@@ -410,6 +418,16 @@
             "label": "Assises AFER, meeting de Lyon, recensé par PresiTracker2027",
             "url": "https://presitracker2027.fr/themes/fis",
             "date": "2026-10-10"
+          }
+        },
+        {
+          "theme": "PRODUCTION",
+          "text": "« Mener enfin à terme la suppression de la CVAE » ; l'impôt sur les sociétés reste à 25 %",
+          "modelled": true,
+          "source": {
+            "label": "Site de campagne, « Une loi de stabilité fiscale » (annonce à la REF, 27/08/2026)",
+            "url": "https://attalpresident.fr/programme/mesures/loi-de-stabilite-fiscale",
+            "date": "2026-08-27"
           }
         }
       ]
@@ -582,6 +600,26 @@
           "source": {
             "label": "Livret « La France entreprend », recensé par PresiTracker2027",
             "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "CONSOMMATION",
+          "text": "TVA ramenée de 20 % à 5,5 % sur l'électricité, le gaz, le fioul et les carburants ; TVA à 0 % sur cent produits de première nécessité",
+          "modelled": false,
+          "source": {
+            "label": "Politique Matin, entretien LCI du 25/11/2026",
+            "url": "https://www.politiquematin.fr/marine-le-pen-lci-salaires-cotisations-petits-patrons-25-novembre-2026",
+            "date": "2026-11-25"
+          }
+        },
+        {
+          "theme": "PRODUCTION",
+          "text": "Supprimer la cotisation foncière des entreprises (gain estimé à 3 Md€ pour les petites entreprises) ; périmètre exact non précisé, l'app ne la modélise pas encore",
+          "modelled": false,
+          "source": {
+            "label": "Politique Matin, entretien LCI du 25/11/2026",
+            "url": "https://www.politiquematin.fr/marine-le-pen-lci-salaires-cotisations-petits-patrons-25-novembre-2026",
+            "date": "2026-11-25"
           }
         }
       ]
@@ -799,6 +837,16 @@
           "source": {
             "label": "Programme Horizons, recensé par PresiTracker2027",
             "url": "https://presitracker2027.fr/themes/fis"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Suppression des droits de mutation (« frais de notaire ») pour le premier achat de résidence principale des moins de 35 ans, sans plafond publié",
+          "modelled": false,
+          "source": {
+            "label": "Programme d'Édouard Philippe, page logement (mise à jour du 20/11/2026)",
+            "url": "https://www.edouardphilippe.fr/programme",
+            "date": "2026-11-20"
           }
         }
       ]
@@ -1043,7 +1091,7 @@
       },
       "notComputable": {
         "PATRIMOINE": "ISF climatique sans barème publié",
-        "SUCCESSION": "Deux tranches ajoutées au-delà de 4 M€ et 13 M€ sans taux publiés"
+        "SUCCESSION": "Contribution de 10 % au-delà de 4 M€ et 10 % de plus au-delà de 13 M€, sans articulation publiée avec le barème actuel (marginale ou non, par héritier ou non)"
       },
       "measures": [
         {
@@ -1064,6 +1112,16 @@
             "label": "« Pour une prospérité écologique », recensé par PresiTracker2027",
             "url": "https://presitracker2027.fr/themes/fis",
             "date": "2026-07-13"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Héritages : contribution de 10 % au-delà de 4 M€ et de 10 % supplémentaires au-delà de 13 M€ ; pacte Dutreil ramené de 75 % à 50 % d'exonération ; fin des avantages du démembrement (15 Md€ par an annoncés)",
+          "modelled": false,
+          "source": {
+            "label": "L'Info Durable, conférence de presse des Écologistes, 27/08/2026",
+            "url": "https://www.linfodurable.fr/politique/les-ecologistes-veulent-taxer-davantage-les-heritages-des-plus-fortunes-58714",
+            "date": "2026-08-27"
           }
         }
       ]
@@ -1110,18 +1168,103 @@
             "url": "https://presitracker2027.fr/themes/fis",
             "date": "2026-10-07"
           }
+        },
+        "csgSalary": {
+          "value": {
+            "rate": 0,
+            "deductible": 0,
+            "crds": 0.005,
+            "base": 0.9825
+          },
+          "source": {
+            "label": "« Objectif Élysée 2027 » (CNews/Europe 1), annonces fiscales du 26/11/2026",
+            "url": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685",
+            "date": "2026-11-26"
+          }
+        },
+        "wealthTax": {
+          "value": null,
+          "source": {
+            "label": "« Objectif Élysée 2027 » (CNews/Europe 1), annonces fiscales du 26/11/2026",
+            "url": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685",
+            "date": "2026-11-26"
+          }
+        },
+        "cvae": {
+          "value": null,
+          "source": {
+            "label": "« Objectif Élysée 2027 » (CNews/Europe 1), annonces fiscales du 26/11/2026",
+            "url": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685",
+            "date": "2026-11-26"
+          }
+        },
+        "c3s": {
+          "value": null,
+          "source": {
+            "label": "« Objectif Élysée 2027 » (CNews/Europe 1), annonces fiscales du 26/11/2026",
+            "url": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685",
+            "date": "2026-11-26"
+          }
+        },
+        "cfeCoefficient": {
+          "value": 0,
+          "source": {
+            "label": "« Objectif Élysée 2027 » (CNews/Europe 1), annonces fiscales du 26/11/2026",
+            "url": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685",
+            "date": "2026-11-26"
+          }
         }
       },
       "notComputable": {},
       "measures": [
         {
           "theme": "PATRIMOINE",
-          "text": "Suppression des droits de succession, notamment pour la transmission des fermes",
+          "text": "Suppression des droits de succession, notamment pour la transmission des fermes ; le 26/11/2026, suppression annoncée des droits sur les transmissions en ligne directe (8 Md€)",
           "modelled": true,
           "source": {
             "label": "Entretien TV Agri, rapporté par Agra, recensé par PresiTracker2027",
             "url": "https://presitracker2027.fr/themes/fis",
             "date": "2026-10-07"
+          }
+        },
+        {
+          "theme": "REVENU",
+          "text": "Suppression de la CSG sur les revenus d'activité (salariés, indépendants, fonctionnaires), présentée comme une hausse de 10 % des revenus. L'app retire la CSG du salaire et garde la CRDS (non évoquée)",
+          "modelled": true,
+          "source": {
+            "label": "« Objectif Élysée 2027 » (CNews/Europe 1), annonces fiscales du 26/11/2026",
+            "url": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685",
+            "date": "2026-11-26"
+          }
+        },
+        {
+          "theme": "PATRIMOINE",
+          "text": "Abrogation de l'impôt sur la fortune immobilière",
+          "modelled": true,
+          "source": {
+            "label": "« Objectif Élysée 2027 » (CNews/Europe 1), annonces fiscales du 26/11/2026",
+            "url": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685",
+            "date": "2026-11-26"
+          }
+        },
+        {
+          "theme": "PRODUCTION",
+          "text": "Suppression des impôts de production (16 Md€) ; l'app retire CVAE, C3S et CFE",
+          "modelled": true,
+          "source": {
+            "label": "« Objectif Élysée 2027 » (CNews/Europe 1), annonces fiscales du 26/11/2026",
+            "url": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685",
+            "date": "2026-11-26"
+          }
+        },
+        {
+          "theme": "CONSOMMATION",
+          "text": "Taxes sur les carburants baissées d'un tiers, environ 40 centimes par litre (12 Md€ par an)",
+          "modelled": false,
+          "source": {
+            "label": "« Objectif Élysée 2027 » (CNews/Europe 1), annonces fiscales du 26/11/2026",
+            "url": "https://www.europe1.fr/politique/objectif-elysee-2027-suppression-de-la-csg-hausse-de-10-des-revenus-les-annonces-fiscales-deric-zemmour-1245685",
+            "date": "2026-11-26"
           }
         }
       ]
@@ -1555,7 +1698,18 @@
       "id": "riner",
       "params": {},
       "notComputable": {},
-      "measures": []
+      "measures": [
+        {
+          "theme": "REVENU",
+          "text": "Augmenter le salaire net par des allègements de charges (réduire l'écart entre brut et net) et alléger les taxes sur les entreprises, sans chiffrage",
+          "modelled": false,
+          "source": {
+            "label": "LCP, 10/11/2026",
+            "url": "https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935",
+            "date": "2026-11-10"
+          }
+        }
+      ]
     },
     {
       "id": "rohou",
@@ -1568,42 +1722,25 @@
       "params": {
         "inheritance": {
           "value": {
-            "childAllowance": 100000,
+            "childAllowance": 0,
             "brackets": [
               {
-                "upTo": 8072,
-                "rate": 0.05
+                "upTo": 1000000,
+                "rate": 0
               },
               {
-                "upTo": 12109,
-                "rate": 0.1
+                "upTo": 5000000,
+                "rate": 0.5
               },
               {
-                "upTo": 15932,
-                "rate": 0.15
-              },
-              {
-                "upTo": 552324,
-                "rate": 0.2
-              },
-              {
-                "upTo": 902838,
-                "rate": 0.3
-              },
-              {
-                "upTo": 1805677,
-                "rate": 0.4
-              },
-              {
-                "rate": 0.45
+                "rate": 0.6
               }
-            ],
-            "exemptBelow": 1000000
+            ]
           },
           "source": {
-            "label": "« Big Bang : la règle républicaine » (La France humaniste), recensé par PresiTracker2027",
-            "url": "https://presitracker2027.fr/themes/fis",
-            "date": "2026-08-28"
+            "label": "Capital (via Yahoo Finance), « Héritage : zéro impôt jusqu'à 1 million d'euros mais 60 % au-delà de 5 millions », France 2 / franceinfo du 23/11/2026",
+            "url": "https://fr.finance.yahoo.com/actualites/h%C3%A9ritage-z%C3%A9ro-imp%C3%B4t-jusqu%C3%A0-1-225911601.html",
+            "date": "2026-11-23"
           }
         },
         "cvae": {
@@ -1629,27 +1766,37 @@
         }
       },
       "notComputable": {
-        "PATRIMOINE": "Impôt unique sur la fortune dès 2,2 M€, fortement progressif, sans barème publié"
+        "PATRIMOINE": "Impôt unique sur la fortune dès 2,2 M€, barème « proche de celui de 2016 » non publié"
       },
       "measures": [
         {
           "theme": "PATRIMOINE",
-          "text": "Pas de droits de succession sous 1 M€ ; au-delà, droits plus lourds sans barème publié (l'app applique le barème actuel au-delà)",
+          "text": "Successions en ligne directe en trois tranches : 0 % jusqu'à 1 M€, 50 % de 1 à 5 M€, 60 % au-delà. L'app les applique comme taux marginaux par héritier (non précisé)",
           "modelled": true,
           "source": {
-            "label": "« Big Bang : la règle républicaine » (La France humaniste), recensé par PresiTracker2027",
-            "url": "https://presitracker2027.fr/themes/fis",
-            "date": "2026-08-28"
+            "label": "Capital (via Yahoo Finance), « Héritage : zéro impôt jusqu'à 1 million d'euros mais 60 % au-delà de 5 millions », France 2 / franceinfo du 23/11/2026",
+            "url": "https://fr.finance.yahoo.com/actualites/h%C3%A9ritage-z%C3%A9ro-imp%C3%B4t-jusqu%C3%A0-1-225911601.html",
+            "date": "2026-11-23"
           }
         },
         {
           "theme": "PATRIMOINE",
-          "text": "Impôt unique sur la fortune, toutes sources de patrimoine, à partir de 2,2 M€, ciblant le 1 % le plus riche",
+          "text": "Impôt unique sur la fortune, toutes sources de patrimoine, à partir de 2,2 M€, ciblant le 1 % le plus riche, barème « proche de celui de 2016 », biens professionnels exonérés",
           "modelled": false,
           "source": {
-            "label": "« Big Bang : la règle républicaine » (La France humaniste), recensé par PresiTracker2027",
-            "url": "https://presitracker2027.fr/themes/fis",
-            "date": "2026-08-28"
+            "label": "Capital (via Yahoo Finance), « Héritage : zéro impôt jusqu'à 1 million d'euros mais 60 % au-delà de 5 millions », France 2 / franceinfo du 23/11/2026",
+            "url": "https://fr.finance.yahoo.com/actualites/h%C3%A9ritage-z%C3%A9ro-imp%C3%B4t-jusqu%C3%A0-1-225911601.html",
+            "date": "2026-11-23"
+          }
+        },
+        {
+          "theme": "REVENU",
+          "text": "Transfert de plus de 200 Md€ de cotisations vers une CSG universelle, pour une hausse moyenne de 200 € nets par mois ; taux de CSG non publié",
+          "modelled": false,
+          "source": {
+            "label": "Var-Actu, 20/11/2026",
+            "url": "https://www.varactu.fr/dominique-de-villepin-se-lance-dans-la-course-a-lelysee-avec-258-propositions/",
+            "date": "2026-11-20"
           }
         },
         {
